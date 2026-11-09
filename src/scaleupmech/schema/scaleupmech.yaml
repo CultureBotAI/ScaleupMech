@@ -327,12 +327,12 @@ classes:
     attributes:
       resource_identifier:
         required: true
-        pattern: ^SFID-[1-9][0-9]*$
+        pattern: ^SFID-[1-9][0-9]*(?![\s\S])
       label:
         required: true
       url:
         required: true
-        pattern: ^https://projectpisces\.org/flowsheets/[1-9][0-9]*$
+        pattern: ^https://projectpisces\.org/flowsheets/[1-9][0-9]*(?![\s\S])
       relation:
         range: PiscesRelation
         required: true
