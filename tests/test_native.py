@@ -650,3 +650,20 @@ def test_pisces_links_require_supported_host_path_and_matching_resource(record, 
     ]
     with pytest.raises(Exception):
         validate_record(record)
+
+
+@pytest.mark.parametrize("fields", [("url",), ("resource_identifier",), ("url", "resource_identifier")])
+def test_pisces_identity_rejects_terminal_newlines(record, fields):
+    link = {
+        "resource_identifier": "SFID-999999999",
+        "label": "Synthetic syntax fixture only",
+        "url": "https://projectpisces.org/flowsheets/999999999",
+        "relation": "CONTEXT_ONLY", "scope": "No real resource asserted",
+        "accessed_at": "2026-11-09T00:00:00Z", "evidence": evidence(),
+    }
+    record["pisces_links"] = [link]
+    validate_record(record)
+    for field in fields:
+        link[field] += "\n"
+    with pytest.raises(Exception):
+        validate_record(record)
