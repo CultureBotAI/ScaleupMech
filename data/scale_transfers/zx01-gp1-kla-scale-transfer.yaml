@@ -1,0 +1,702 @@
+{
+  "id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+  "name": "ZX01 GP-1 transfer from nominal 5 L to 500 L",
+  "record_kind": "OBSERVED_SCALE_TRANSFER",
+  "description": "Four-scale batch fermentation verification compares GP-1 concentration and logarithmic-phase kLa for the same reported ZX01 strain.",
+  "organism": {
+    "reported_name": "Streptomyces kanasenisi",
+    "strain_label": "ZX01",
+    "strain_identifier": "CGMCC 4893",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+        "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+        "claim": "The paper identifies ZX01 and culture collection strain CGMCC4893; species spelling is retained as published.",
+        "locator": "html:#sec4dot1-molecules-23-00125",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "process_context": {
+    "summary": "Glycoprotein GP-1 batch fermentation at bench and pilot scales; agitation was adjusted to obtain similar kLa. The scale-dependent inoculum and vessel systems are not claimed identical.",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+        "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+        "claim": "The study reports pilot-scale verification at similar kLa and compares outcomes with bench-scale batches.",
+        "locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "vessel-5l",
+      "name": "Nominal 5 L verification fermentor",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Source verification batches at 200 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists total vessel volume 5 L.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "3.5",
+            "qualifier": "REPORTED",
+            "value": 3.5,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists working volume 3.5 L for nominal 5 L vessel.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "medium": {
+        "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The paper separately specifies seed and fermentation media.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The repeated verification table reports the nominal 5 L condition and its batch averages.",
+          "locator": "html:#molecules-23-00125-t002",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "condition_id": "vessel-15l",
+      "name": "Nominal 15 L verification fermentor",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Source verification batches at 225 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "15",
+            "qualifier": "REPORTED",
+            "value": 15,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists total vessel volume 15 L.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "10",
+            "qualifier": "REPORTED",
+            "value": 10,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists working volume 10 L for nominal 15 L vessel.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "medium": {
+        "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The paper separately specifies seed and fermentation media.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The repeated verification table reports the nominal 15 L condition and its batch averages.",
+          "locator": "html:#molecules-23-00125-t004",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "condition_id": "vessel-70l",
+      "name": "Nominal 70 L verification fermentor",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Source verification batches at 250 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "70",
+            "qualifier": "REPORTED",
+            "value": 70,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists total vessel volume 70 L.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "50",
+            "qualifier": "REPORTED",
+            "value": 50,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists working volume 50 L for nominal 70 L vessel.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "medium": {
+        "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The paper separately specifies seed and fermentation media.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The repeated verification table reports the nominal 70 L condition and its batch averages.",
+          "locator": "html:#molecules-23-00125-t004",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "condition_id": "vessel-500l",
+      "name": "Nominal 500 L verification fermentor",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Source verification batches at 250 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "500",
+            "qualifier": "REPORTED",
+            "value": 500,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists total vessel volume 500 L.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "350",
+            "qualifier": "REPORTED",
+            "value": 350,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+                "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+                "claim": "Table 5 lists working volume 350 L for nominal 500 L vessel.",
+                "locator": "html:#molecules-23-00125-t005",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "medium": {
+        "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The paper separately specifies seed and fermentation media.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures.",
+            "locator": "html:#sec4dot2-molecules-23-00125/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The repeated verification table reports the nominal 500 L condition and its batch averages.",
+          "locator": "html:#molecules-23-00125-t004",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "gp1-5l",
+      "condition_id": "vessel-5l",
+      "endpoint": "TITER",
+      "name": "Final GP-1 concentration",
+      "quantity": {
+        "reported_value": "3.92",
+        "qualifier": "REPORTED",
+        "value": 3.92,
+        "unit": "mg/L",
+        "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average final GP-1 concentration 3.92 mg/L for nominal 5 L.",
+            "locator": "html:#molecules-23-00125-t002",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "Methods report 7-day cultivation for the selected production vessel scale.",
+            "locator": "html:#sec4dot7-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint.",
+            "locator": "html:#sec4dot4-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+    },
+    {
+      "measurement_id": "kla-5l",
+      "condition_id": "vessel-5l",
+      "endpoint": "KLA",
+      "name": "Volumetric oxygen transfer coefficient",
+      "quantity": {
+        "reported_value": "21.62",
+        "qualifier": "REPORTED",
+        "value": 21.62,
+        "unit": "h^-1",
+        "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average kLa 21.62 h^-1 for nominal 5 L.",
+            "locator": "html:#molecules-23-00125-t002",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h.",
+            "locator": "html:#sec4dot6-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+    },
+    {
+      "measurement_id": "gp1-15l",
+      "condition_id": "vessel-15l",
+      "endpoint": "TITER",
+      "name": "Final GP-1 concentration",
+      "quantity": {
+        "reported_value": "4.03",
+        "qualifier": "REPORTED",
+        "value": 4.03,
+        "unit": "mg/L",
+        "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average final GP-1 concentration 4.03 mg/L for nominal 15 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "Methods report 7-day cultivation for the selected production vessel scale.",
+            "locator": "html:#sec4dot8-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint.",
+            "locator": "html:#sec4dot4-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+    },
+    {
+      "measurement_id": "kla-15l",
+      "condition_id": "vessel-15l",
+      "endpoint": "KLA",
+      "name": "Volumetric oxygen transfer coefficient",
+      "quantity": {
+        "reported_value": "22.80",
+        "qualifier": "REPORTED",
+        "value": 22.8,
+        "unit": "h^-1",
+        "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average kLa 22.80 h^-1 for nominal 15 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h.",
+            "locator": "html:#sec4dot6-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+    },
+    {
+      "measurement_id": "gp1-70l",
+      "condition_id": "vessel-70l",
+      "endpoint": "TITER",
+      "name": "Final GP-1 concentration",
+      "quantity": {
+        "reported_value": "3.82",
+        "qualifier": "REPORTED",
+        "value": 3.82,
+        "unit": "mg/L",
+        "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average final GP-1 concentration 3.82 mg/L for nominal 70 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "Methods report 7-day cultivation for the selected production vessel scale.",
+            "locator": "html:#sec4dot8-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint.",
+            "locator": "html:#sec4dot4-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+    },
+    {
+      "measurement_id": "kla-70l",
+      "condition_id": "vessel-70l",
+      "endpoint": "KLA",
+      "name": "Volumetric oxygen transfer coefficient",
+      "quantity": {
+        "reported_value": "23.20",
+        "qualifier": "REPORTED",
+        "value": 23.2,
+        "unit": "h^-1",
+        "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average kLa 23.20 h^-1 for nominal 70 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h.",
+            "locator": "html:#sec4dot6-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+    },
+    {
+      "measurement_id": "gp1-500l",
+      "condition_id": "vessel-500l",
+      "endpoint": "TITER",
+      "name": "Final GP-1 concentration",
+      "quantity": {
+        "reported_value": "4.20",
+        "qualifier": "REPORTED",
+        "value": 4.2,
+        "unit": "mg/L",
+        "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average final GP-1 concentration 4.20 mg/L for nominal 500 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "Methods report 7-day cultivation for the selected production vessel scale.",
+            "locator": "html:#sec4dot8-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint.",
+            "locator": "html:#sec4dot4-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+    },
+    {
+      "measurement_id": "kla-500l",
+      "condition_id": "vessel-500l",
+      "endpoint": "KLA",
+      "name": "Volumetric oxygen transfer coefficient",
+      "quantity": {
+        "reported_value": "22.24",
+        "qualifier": "REPORTED",
+        "value": 22.24,
+        "unit": "h^-1",
+        "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "The verification table reports average kLa 22.24 h^-1 for nominal 500 L.",
+            "locator": "html:#molecules-23-00125-t004",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+            "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+            "claim": "kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h.",
+            "locator": "html:#sec4dot6-molecules-23-00125",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison_id": "gp1-four-scales",
+      "kind": "OBSERVED_TRANSFER",
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-15l",
+        "vessel-70l",
+        "vessel-500l"
+      ],
+      "measurement_ids": [
+        "gp1-5l",
+        "gp1-15l",
+        "gp1-70l",
+        "gp1-500l"
+      ],
+      "endpoint": "TITER",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+      "interpretation": "These reported batch averages support this study-specific transfer comparison. They do not isolate vessel size from agitation, geometry or inoculum differences.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "comparison_id": "kla-four-scales",
+      "kind": "OBSERVED_TRANSFER",
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-15l",
+        "vessel-70l",
+        "vessel-500l"
+      ],
+      "measurement_ids": [
+        "kla-5l",
+        "kla-15l",
+        "kla-70l",
+        "kla-500l"
+      ],
+      "endpoint": "KLA",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+      "interpretation": "These reported batch averages support this study-specific transfer comparison. They do not isolate vessel size from agitation, geometry or inoculum differences.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+          "claim": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The nominal 100-fold vessel ratio is not presented as an independently derived working-volume ratio.",
+    "The four-batch kLa values are similar, not numerically identical; no OTR value is inferred from kLa.",
+    "Table 2 reports average maximum DCW 3.46 g/L, while nearby prose says 3.31 g/L. Biomass is excluded from this seed to avoid silently resolving that inconsistency.",
+    "The publication spelling Streptomyces kanasenisi is retained; no external taxonomic synonym or accession is inferred."
+  ],
+  "evidence": [
+    {
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules 23:125",
+      "claim": "Four-scale batch fermentation verification compares GP-1 concentration and logarithmic-phase kLa for the same reported ZX01 strain.",
+      "locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "measurements",
+      "reason": "No source-reported GP-1 substrate yield or volumetric productivity is retained; no rate is calculated from final titer and duration."
+    },
+    {
+      "scope": "pisces",
+      "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T03:28:31Z",
+      "curator": "scaleup-stream-c",
+      "action": "CREATE",
+      "summary": "Curate primary strain-specific scale evidence with reported quantities and scoped comparisons",
+      "history_file": "history/records/zx01-gp1-kla-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-bace3d.yaml"
+    }
+  ]
+}

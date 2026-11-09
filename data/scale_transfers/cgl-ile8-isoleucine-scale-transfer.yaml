@@ -1,0 +1,437 @@
+{
+  "id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+  "name": "cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels",
+  "record_kind": "OBSERVED_SCALE_TRANSFER",
+  "description": "The paper compares optimized cgl-Ile8 fermentation at nominal 5 L and 50 L, reporting product concentration, volumetric productivity and mass-ratio yield.",
+  "organism": {
+    "reported_name": "Corynebacterium glutamicum",
+    "strain_label": "cgl-Ile8",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+        "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+        "claim": "The source identifies cgl-Ile8 as the final strain used in the optimized 5 L and 50 L comparison.",
+        "locator": "html:#sec2/p[1]",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "process_context": {
+    "summary": "Study-specific L-isoleucine fermentation comparison after pH and dissolved-oxygen optimization at 5 L. The 50 L result is identified as the scalability experiment; missing operating details remain gaps.",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+        "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+        "claim": "The Results distinguish 5 L pH/DO optimization from the subsequent 50 L scalability experiment.",
+        "locator": "html:#Sec21/p[1]",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "vessel-5l",
+      "name": "Nominal 5 L cgl-Ile8 fermentation",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Optimized 5 L result at pH 7.2 and dissolved-oxygen setpoint 40%; distinct from the earlier unoptimized 35.24 g/L cgl-Ile8 result.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal fermentor designation in the publication; not working broth volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+                "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+                "claim": "The abstract identifies the nominal 5 L fermentor comparison.",
+                "locator": "html:#sec2/p[1]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "INITIAL_MEDIUM_VOLUME",
+          "quantity": {
+            "reported_value": "2.5",
+            "qualifier": "REPORTED",
+            "value": 2.5,
+            "unit": "L",
+            "basis": "Fermentation medium already in the 5 L vessel before pooled seed transfer; not total culture volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+                "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+                "claim": "Methods state 2.5 L fermentation medium in the 5 L vessel.",
+                "locator": "html:#Sec13/p[2]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        },
+        {
+          "kind": "INOCULUM_VOLUME",
+          "quantity": {
+            "reported_value": "400",
+            "qualifier": "REPORTED",
+            "value": 400,
+            "unit": "mL",
+            "basis": "Pooled seed culture transferred into the 5 L vessel; not summed here with medium to infer working volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+                "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+                "claim": "Methods state 400 mL pooled seed was transferred into the 5 L vessel.",
+                "locator": "html:#Sec13/p[2]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+          "claim": "The Results identify the 5 L condition in the optimization-to-scale-up comparison.",
+          "locator": "html:#Sec21/p[1]",
+          "source_license": "CC-BY-4.0"
+        }
+      ],
+      "medium": {
+        "summary": "The supplement lists a fermentation-tank medium containing glucose and cane molasses, among other nutrients. The main Methods also describes a concentrated glucose feed. This does not establish the yield denominator.",
+        "evidence": [
+          {
+            "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+            "title": "Cao et al. (2026), Additional file 1, Fig. S20 and Table S 11",
+            "claim": "The fermentation-tank medium table includes both glucose and cane molasses.",
+            "locator": "docx:TableS11",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The Methods identifies a concentrated glucose feeding solution.",
+            "locator": "html:#Sec12/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      }
+    },
+    {
+      "condition_id": "vessel-50l",
+      "name": "Nominal 50 L cgl-Ile8 fermentation",
+      "kind": "OBSERVED_CULTURE",
+      "description": "The subsequent 50 L scalability run. The source text cited here does not establish identical setpoints, feed policy or working volume at this scale.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "50",
+            "qualifier": "REPORTED",
+            "value": 50,
+            "unit": "L",
+            "basis": "Nominal fermentor designation in the publication; not working broth volume.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+                "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+                "claim": "The abstract identifies the nominal 50 L fermentor comparison.",
+                "locator": "html:#sec2/p[1]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+          "claim": "The Results identify the 50 L condition in the optimization-to-scale-up comparison.",
+          "locator": "html:#Sec21/p[1]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "titer-5l",
+      "condition_id": "vessel-5l",
+      "endpoint": "TITER",
+      "name": "L-isoleucine concentration",
+      "quantity": {
+        "reported_value": "48.49",
+        "qualifier": "REPORTED",
+        "value": 48.49,
+        "unit": "g/L",
+        "basis": "Source-reported L-isoleucine mass per litre of fermentation culture.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 48.49 g/L as the optimized nominal 5LL-isoleucine concentration.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    },
+    {
+      "measurement_id": "yield-5l",
+      "condition_id": "vessel-5l",
+      "endpoint": "YIELD",
+      "name": "Source-labelled L-isoleucine yield",
+      "quantity": {
+        "reported_value": "0.31",
+        "qualifier": "REPORTED",
+        "value": 0.31,
+        "unit": "g/g",
+        "basis": "Source reports a mass ratio in g/g, but the denominator substrate and consumption accounting are not defined in the retained source; do not interpret as glucose yield.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 0.31 g/g as the optimized nominal 5 L source-labelled L-isoleucine yield.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    },
+    {
+      "measurement_id": "productivity-5l",
+      "condition_id": "vessel-5l",
+      "endpoint": "VOLUMETRIC_RATE",
+      "name": "L-isoleucine volumetric productivity",
+      "quantity": {
+        "reported_value": "1.01",
+        "qualifier": "REPORTED",
+        "value": 1.01,
+        "unit": "g/L/h",
+        "basis": "Source-labelled volumetric productivity in g/L/h; no independent derivation or unreported averaging convention is supplied.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 1.01 g/L/h as the optimized nominal 5LL-isoleucine volumetric productivity.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    },
+    {
+      "measurement_id": "titer-50l",
+      "condition_id": "vessel-50l",
+      "endpoint": "TITER",
+      "name": "L-isoleucine concentration",
+      "quantity": {
+        "reported_value": "50.12",
+        "qualifier": "REPORTED",
+        "value": 50.12,
+        "unit": "g/L",
+        "basis": "Source-reported L-isoleucine mass per litre of fermentation culture.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 50.12 g/L as the optimized nominal 50LL-isoleucine concentration.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The Results repeat the 50 L titer, yield and productivity values.",
+            "locator": "html:#Sec21/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    },
+    {
+      "measurement_id": "yield-50l",
+      "condition_id": "vessel-50l",
+      "endpoint": "YIELD",
+      "name": "Source-labelled L-isoleucine yield",
+      "quantity": {
+        "reported_value": "0.32",
+        "qualifier": "REPORTED",
+        "value": 0.32,
+        "unit": "g/g",
+        "basis": "Source reports a mass ratio in g/g, but the denominator substrate and consumption accounting are not defined in the retained source; do not interpret as glucose yield.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 0.32 g/g as the optimized nominal 50 L source-labelled L-isoleucine yield.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The Results repeat the 50 L titer, yield and productivity values.",
+            "locator": "html:#Sec21/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    },
+    {
+      "measurement_id": "productivity-50l",
+      "condition_id": "vessel-50l",
+      "endpoint": "VOLUMETRIC_RATE",
+      "name": "L-isoleucine volumetric productivity",
+      "quantity": {
+        "reported_value": "1.04",
+        "qualifier": "REPORTED",
+        "value": 1.04,
+        "unit": "g/L/h",
+        "basis": "Source-labelled volumetric productivity in g/L/h; no independent derivation or unreported averaging convention is supplied.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The abstract reports 1.04 g/L/h as the optimized nominal 50LL-isoleucine volumetric productivity.",
+            "locator": "html:#sec2/p[1]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+            "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+            "claim": "The Results repeat the 50 L titer, yield and productivity values.",
+            "locator": "html:#Sec21/p[1]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison_id": "titer-two-scales",
+      "kind": "OBSERVED_TRANSFER",
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-50l"
+      ],
+      "measurement_ids": [
+        "titer-5l",
+        "titer-50l"
+      ],
+      "endpoint": "TITER",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+      "interpretation": "This is the paper's process-scalability comparison. It does not isolate scale as a causal factor or establish complete equivalence of unreported operating conditions.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+          "claim": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+          "locator": "html:#sec2/p[1]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "comparison_id": "productivity-two-scales",
+      "kind": "OBSERVED_TRANSFER",
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-50l"
+      ],
+      "measurement_ids": [
+        "productivity-5l",
+        "productivity-50l"
+      ],
+      "endpoint": "VOLUMETRIC_RATE",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+      "interpretation": "This is the paper's process-scalability comparison. It does not isolate scale as a causal factor or establish complete equivalence of unreported operating conditions.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+          "claim": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+          "locator": "html:#sec2/p[1]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The 5 L medium volume 2.5 L and inoculum 400 mL are distinct source observations; no 2.9 L working volume is inferred.",
+    "The 50 L designation is nominal. No working or final broth volume is reported in the retained source passages.",
+    "The mass-ratio yields 0.31 g/g and 0.32 g/g are preserved as source-labelled values with unresolved denominators. They are excluded from formal yield comparisons.",
+    "The optimized 5 L endpoints are 48.49 g/L, 0.31 g/g and 1.01 g/L/h; earlier cgl-Ile8 values before process optimization are not substituted.",
+    "Supplementary Figure S 20 spans 0–48 h but does not define yield accounting or 50 L working volume; plotted values are not digitized.",
+    "The general 5 L Methods pH 7.0 differs from the optimized Results pH 7.2; the latter defines the selected optimized condition. No 50 L setpoint is inferred."
+  ],
+  "evidence": [
+    {
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol 17:142",
+      "claim": "The paper compares optimized cgl-Ile8 fermentation at nominal 5 L and 50 L, reporting product concentration, volumetric productivity and mass-ratio yield.",
+      "locator": "html:#sec2/p[1]",
+      "source_license": "CC-BY-4.0"
+    },
+    {
+      "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+      "title": "Cao et al. (2026), Additional file 1, Fig. S20 and Table S 11",
+      "claim": "Figure S 20 labels the 50 L cgl-Ile8 fermentation curve and a time axis extending to 48 h; no working volume or yield definition is supplied.",
+      "locator": "docx:FigS20",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "media",
+      "reason": "The supplement lists a general fermentation-tank medium, but the 50 L batch-specific composition and feed policy are not established by the retained passages.",
+      "condition_id": "vessel-50l"
+    },
+    {
+      "scope": "volumes",
+      "reason": "Working and final broth volumes are not established for either selected condition; nominal capacities and separate 5 L medium/inoculum values are retained."
+    },
+    {
+      "scope": "measurements",
+      "reason": "The yield denominator and the exact productivity averaging convention are unresolved. No kLa or OTR is retained, and no new rate or yield is computed."
+    },
+    {
+      "scope": "comparability",
+      "reason": "No formal yield comparison is asserted because substrate denominator accounting is unresolved; operating-condition equivalence at 50 L is also incomplete."
+    },
+    {
+      "scope": "pisces",
+      "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T03:28:31Z",
+      "curator": "scaleup-stream-c",
+      "action": "CREATE",
+      "summary": "Curate primary strain-specific scale evidence with reported quantities and scoped comparisons",
+      "history_file": "history/records/cgl-ile8-isoleucine-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-f2fa90.yaml"
+    }
+  ]
+}
