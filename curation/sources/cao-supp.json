@@ -1,0 +1,22 @@
+{
+  "source_id": "cao-supp",
+  "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+  "locators": {
+    "docx:TableS11": {
+      "source_locator": "docx:TableS11",
+      "curator_paraphrase": "The fermentation-tank medium table includes both glucose and cane molasses.",
+      "selected_text_sha256": null,
+      "facts": {
+        "cgl-ile8-isoleucine-scale-transfer--conditions--0--medium": {
+          "summary": "The supplement lists a fermentation-tank medium containing glucose and cane molasses, among other nutrients. The main Methods also describes a concentrated glucose feed. This does not establish the yield denominator."
+        }
+      }
+    },
+    "docx:FigS20": {
+      "source_locator": "docx:FigS20",
+      "curator_paraphrase": "Figure S 20 labels the 50 L cgl-Ile8 fermentation curve and a time axis extending to 48 h; no working volume or yield definition is supplied.",
+      "selected_text_sha256": null,
+      "facts": {}
+    }
+  }
+}

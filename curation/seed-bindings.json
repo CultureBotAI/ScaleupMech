@@ -1,0 +1,1202 @@
+{
+  "format_version": 1,
+  "record_ids": [
+    "ScaleupMech:zx01-gp1-kla-scale-transfer",
+    "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+    "ScaleupMech:cgl-ile8-isoleucine-scale-transfer"
+  ],
+  "bindings": [
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/name",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--name",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/record_kind",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--record_kind",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/description",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--description",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/organism",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec4dot1-molecules-23-00125",
+      "fact_key": "zx01-gp1-kla-scale-transfer--organism",
+      "evidence_pointer": "/organism/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot1-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/process_context",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--process_context",
+      "evidence_pointer": "/process_context/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t002",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--0",
+      "evidence_pointer": "/conditions/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t002"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/0/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--0--volumes--0",
+      "evidence_pointer": "/conditions/0/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/0/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--0--volumes--1",
+      "evidence_pointer": "/conditions/0/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/0/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--0--medium",
+      "evidence_pointer": "/conditions/0/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[2]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--1",
+      "evidence_pointer": "/conditions/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/1/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--1--volumes--0",
+      "evidence_pointer": "/conditions/1/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/1/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--1--volumes--1",
+      "evidence_pointer": "/conditions/1/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/1/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--1--medium",
+      "evidence_pointer": "/conditions/1/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[2]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--2",
+      "evidence_pointer": "/conditions/2/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/2/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--2--volumes--0",
+      "evidence_pointer": "/conditions/2/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/2/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--2--volumes--1",
+      "evidence_pointer": "/conditions/2/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/2/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--2--medium",
+      "evidence_pointer": "/conditions/2/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[2]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/3",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--3",
+      "evidence_pointer": "/conditions/3/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/3/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--3--volumes--0",
+      "evidence_pointer": "/conditions/3/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/3/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t005",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--3--volumes--1",
+      "evidence_pointer": "/conditions/3/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t005"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/conditions/3/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--conditions--3--medium",
+      "evidence_pointer": "/conditions/3/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[2]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot2-molecules-23-00125/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t002",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--0",
+      "evidence_pointer": "/measurements/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t002"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot7-molecules-23-00125"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot4-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t002",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--1",
+      "evidence_pointer": "/measurements/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t002"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot6-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--2",
+      "evidence_pointer": "/measurements/2/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot8-molecules-23-00125"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot4-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/3",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--3",
+      "evidence_pointer": "/measurements/3/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot6-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/4",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--4",
+      "evidence_pointer": "/measurements/4/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot8-molecules-23-00125"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot4-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/5",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--5",
+      "evidence_pointer": "/measurements/5/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot6-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/6",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--6",
+      "evidence_pointer": "/measurements/6/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot8-molecules-23-00125"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot4-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/measurements/7",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#molecules-23-00125-t004",
+      "fact_key": "zx01-gp1-kla-scale-transfer--measurements--7",
+      "evidence_pointer": "/measurements/7/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#molecules-23-00125-t004"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec4dot6-molecules-23-00125"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/comparisons/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--comparisons--0",
+      "evidence_pointer": "/comparisons/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:zx01-gp1-kla-scale-transfer",
+      "record_pointer": "/comparisons/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "fact_key": "zx01-gp1-kla-scale-transfer--comparisons--1",
+      "evidence_pointer": "/comparisons/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+          "locator": "html:#sec2dot6-molecules-23-00125/p[3]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/name",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--name",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/record_kind",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--record_kind",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/description",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--description",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/organism",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0005/p[2]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--organism",
+      "evidence_pointer": "/organism/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[2]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/process_context",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[4]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--process_context",
+      "evidence_pointer": "/process_context/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[4]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--0",
+      "evidence_pointer": "/conditions/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/0/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0005/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--0--volumes--0",
+      "evidence_pointer": "/conditions/0/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/0/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--0--volumes--1",
+      "evidence_pointer": "/conditions/0/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/0/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0005/p[3]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--0--medium",
+      "evidence_pointer": "/conditions/0/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[3]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[4]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1",
+      "evidence_pointer": "/conditions/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0005/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--0",
+      "evidence_pointer": "/conditions/1/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--1",
+      "evidence_pointer": "/conditions/1/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1/volumes/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--2",
+      "evidence_pointer": "/conditions/1/volumes/2/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1/medium",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0005/p[3]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1--medium",
+      "evidence_pointer": "/conditions/1/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[3]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[4]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-tbl-0001"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/conditions/1/scale_down_target",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[5]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--conditions--1--scale_down_target",
+      "evidence_pointer": "/conditions/1/scale_down_target/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[5]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/measurements/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--measurements--0",
+      "evidence_pointer": "/measurements/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[9]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-fig-0004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/measurements/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--measurements--1",
+      "evidence_pointer": "/measurements/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[9]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-fig-0004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/measurements/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--measurements--2",
+      "evidence_pointer": "/measurements/2/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0005/p[9]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-fig-0004"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/comparisons/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--comparisons--0",
+      "evidence_pointer": "/comparisons/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+      "record_pointer": "/comparisons/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "fact_key": "dm1945x3-cadaverine-physical-scale-down--comparisons--1",
+      "evidence_pointer": "/comparisons/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "locator": "html:#jctb6248-sec-0006/p[6]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/name",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--name",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+          "locator": "docx:FigS20"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/record_kind",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--record_kind",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+          "locator": "docx:FigS20"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/description",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--description",
+      "evidence_pointer": "/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+          "locator": "docx:FigS20"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/organism",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--organism",
+      "evidence_pointer": "/organism/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/process_context",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#Sec21/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--process_context",
+      "evidence_pointer": "/process_context/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#Sec21/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--0",
+      "evidence_pointer": "/conditions/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/0/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--0",
+      "evidence_pointer": "/conditions/0/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/0/volumes/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#Sec13/p[2]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--1",
+      "evidence_pointer": "/conditions/0/volumes/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec13/p[2]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/0/volumes/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#Sec13/p[2]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--2",
+      "evidence_pointer": "/conditions/0/volumes/2/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec13/p[2]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/0/medium",
+      "source_reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+      "source_locator": "docx:TableS11",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--0--medium",
+      "evidence_pointer": "/conditions/0/medium/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+          "locator": "docx:TableS11"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec12/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#Sec21/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--1",
+      "evidence_pointer": "/conditions/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/conditions/1/volumes/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--conditions--1--volumes--0",
+      "evidence_pointer": "/conditions/1/volumes/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--0",
+      "evidence_pointer": "/measurements/0/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--1",
+      "evidence_pointer": "/measurements/1/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/2",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--2",
+      "evidence_pointer": "/measurements/2/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/3",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--3",
+      "evidence_pointer": "/measurements/3/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/4",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--4",
+      "evidence_pointer": "/measurements/4/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/measurements/5",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--measurements--5",
+      "evidence_pointer": "/measurements/5/quantity/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        },
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#Sec21/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/comparisons/0",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--comparisons--0",
+      "evidence_pointer": "/comparisons/0/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    },
+    {
+      "record_id": "ScaleupMech:cgl-ile8-isoleucine-scale-transfer",
+      "record_pointer": "/comparisons/1",
+      "source_reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "source_locator": "html:#sec2/p[1]",
+      "fact_key": "cgl-ile8-isoleucine-scale-transfer--comparisons--1",
+      "evidence_pointer": "/comparisons/1/evidence",
+      "required_evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+          "locator": "html:#sec2/p[1]"
+        }
+      ]
+    }
+  ],
+  "record_scope": {
+    "ScaleupMech:zx01-gp1-kla-scale-transfer": {
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-15l",
+        "vessel-70l",
+        "vessel-500l"
+      ],
+      "measurement_ids": [
+        "gp1-5l",
+        "kla-5l",
+        "gp1-15l",
+        "kla-15l",
+        "gp1-70l",
+        "kla-70l",
+        "gp1-500l",
+        "kla-500l"
+      ],
+      "comparison_ids": [
+        "gp1-four-scales",
+        "kla-four-scales"
+      ],
+      "source_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/"
+      ]
+    },
+    "ScaleupMech:dm1945x3-cadaverine-physical-scale-down": {
+      "condition_ids": [
+        "str-control",
+        "sdr12"
+      ],
+      "measurement_ids": [
+        "control-cadaverine",
+        "sdr12-cadaverine",
+        "sdr12-relative-loss"
+      ],
+      "comparison_ids": [
+        "cadaverine-control-vs-sdr12",
+        "reported-relative-loss"
+      ],
+      "source_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/"
+      ]
+    },
+    "ScaleupMech:cgl-ile8-isoleucine-scale-transfer": {
+      "condition_ids": [
+        "vessel-5l",
+        "vessel-50l"
+      ],
+      "measurement_ids": [
+        "titer-5l",
+        "yield-5l",
+        "productivity-5l",
+        "titer-50l",
+        "yield-50l",
+        "productivity-50l"
+      ],
+      "comparison_ids": [
+        "titer-two-scales",
+        "productivity-two-scales"
+      ],
+      "source_references": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/"
+      ]
+    }
+  }
+}

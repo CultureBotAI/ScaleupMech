@@ -1,0 +1,30 @@
+Curated scientific records, source fact projections and curation metadata are
+licensed under Creative Commons Attribution 4.0 International (CC-BY-4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: ScaleupMech contributors, together with the primary authors and
+sources identified in each record and curation/source-catalogue.json. Records
+and projections are selected, paraphrased or transcribed by the curators; they
+are not unmodified source articles and do not imply primary-author endorsement.
+
+Initial primary sources (each verified CC-BY-4.0):
+- Zhou Y, Han LR, He HW, Sang B, Yu DL, Feng JT, Zhang X (2018).
+  Effects of Agitation, Aeration and Temperature on Production of a Novel
+  Glycoprotein GP-1 by Streptomyces kanasenisi ZX01 and Scale-Up Based on
+  Volumetric Oxygen Transfer Coefficient. Molecules 23(1):125.
+  https://doi.org/10.3390/molecules23010125
+- Olughu W, Nienow A, Hewitt C, Rielly C (2019 online; 2020 journal issue).
+  Scale-down studies for the scale-up of a recombinant Corynebacterium
+  glutamicum fed-batch fermentation: loss of homogeneity leads to lower levels
+  of cadaverine production. Journal of Chemical Technology & Biotechnology
+  95(3):675-685. https://doi.org/10.1002/jctb.6248
+- Cao J, Huang M, Sheng Q, Zhang L, Meng G, Zhao C, Wei A, Liu J, Liu L (2026).
+  Systems metabolic engineering of Corynebacterium glutamicum for efficient
+  production of L-isoleucine. Journal of Animal Science and Biotechnology
+  17:142, and its linked Additional file 1.
+  https://doi.org/10.1186/s40104-026-01459-y
+
+The public Project PISCES label and external URL in navigation metadata retain
+their source's rights. No PISCES flowsheet, unit-operation, stream or TEA content
+is included or relicensed. Original code/schema licensing and vendored notices
+remain governed by LICENSE and the original files.
