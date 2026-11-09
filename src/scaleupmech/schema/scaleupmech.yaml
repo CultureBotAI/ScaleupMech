@@ -1,0 +1,357 @@
+id: https://w3id.org/scaleupmech/schema
+name: scaleupmech
+title: ScaleupMech organism and strain scale-transfer evidence
+license: CC0-1.0
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ScaleupMech: https://w3id.org/scaleupmech/record/
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+default_prefix: ScaleupMech
+default_range: string
+imports:
+- linkml:types
+- mech_shared
+- history
+enums:
+  RecordKind:
+    permissible_values:
+      OBSERVED_SCALE_TRANSFER: {}
+      SCALE_DOWN_MODEL: {}
+      SCALE_CONTEXT: {}
+  ConditionKind:
+    permissible_values:
+      OBSERVED_CULTURE: {}
+      SCALE_DOWN_EXPERIMENT: {}
+      SCALE_DOWN_SIMULATION: {}
+      MODELED_REFERENCE: {}
+  VolumeKind:
+    permissible_values:
+      NOMINAL_VESSEL_VOLUME: {}
+      WORKING_VOLUME: {}
+      INITIAL_MEDIUM_VOLUME: {}
+      INOCULUM_VOLUME: {}
+      ACTUAL_CULTURE_VOLUME: {}
+      FINAL_BROTH_VOLUME: {}
+      REPORTED_VOLUME_UNSPECIFIED: {}
+  QuantityQualifier:
+    permissible_values:
+      REPORTED: {}
+      APPROXIMATE: {}
+      RANGE: {}
+      LESS_THAN: {}
+      AT_MOST: {}
+      GREATER_THAN: {}
+      AT_LEAST: {}
+  Endpoint:
+    permissible_values:
+      TITER: {}
+      VOLUMETRIC_RATE: {}
+      SPECIFIC_RATE: {}
+      YIELD: {}
+      OTR: {}
+      KLA: {}
+      BIOMASS: {}
+      OTHER: {}
+  EvidenceLevel:
+    permissible_values:
+      OBSERVED: {}
+      REPORTED_CALCULATION: {}
+      MODEL_PREDICTED: {}
+  ComparisonKind:
+    permissible_values:
+      OBSERVED_TRANSFER: {}
+      SCALE_DOWN_EVALUATION: {}
+      CONTEXT_ONLY: {}
+  Comparability:
+    permissible_values:
+      SOURCE_REPORTED_COMPARABLE: {}
+      SOURCE_REPORTED_DIFFERENT: {}
+      NOT_ESTABLISHED: {}
+  PiscesRelation:
+    permissible_values:
+      CONTEXT_ONLY: {}
+  GapScope:
+    permissible_values:
+      strain: {}
+      volumes: {}
+      media: {}
+      measurements: {}
+      measurement_basis: {}
+      comparability: {}
+      pisces: {}
+  CurationAction:
+    permissible_values:
+      CREATE: {}
+      EDIT: {}
+      REVIEW: {}
+      AUDIT: {}
+classes:
+  ScaleTransferRecord:
+    tree_root: true
+    description: Sourced organism/strain scale evidence; modeled scale-down and context
+      do not imply observed transfer.
+    attributes:
+      id:
+        required: true
+        identifier: true
+        pattern: ^ScaleupMech:[a-z0-9]+(?:-[a-z0-9]+)*$
+      name:
+        required: true
+      record_kind:
+        range: RecordKind
+        required: true
+      description:
+        required: true
+      organism:
+        range: OrganismIdentity
+        required: true
+        inlined: true
+      process_context:
+        range: SourcedText
+        required: true
+        inlined: true
+      conditions:
+        range: ScaleCondition
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+      measurements:
+        range: ScaleMeasurement
+        multivalued: true
+        inlined_as_list: true
+      comparisons:
+        range: ScaleComparison
+        multivalued: true
+        inlined_as_list: true
+      pisces_links:
+        range: PiscesLink
+        multivalued: true
+        inlined_as_list: true
+      limitations:
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+      research_gaps:
+        range: ResearchGap
+        multivalued: true
+        inlined_as_list: true
+      curation_history:
+        range: CurationEvent
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  EvidenceItem:
+    description: Source supporting the accompanying claim, with a precise locator.
+    attributes:
+      reference:
+        required: true
+        pattern: ^https://[^ ]+$
+      title:
+        required: true
+      claim:
+        required: true
+      locator:
+        required: true
+      source_license:
+        description: Licence verified for the cited source; omit if not established.
+  CurationEvent:
+    attributes:
+      timestamp:
+        required: true
+        pattern: ^20[0-9]{2}-
+      curator:
+        required: true
+      action:
+        range: CurationAction
+        required: true
+      summary:
+        required: true
+      history_file:
+        description: Canonical append-only HistoryRecord sidecar for this event.
+        required: true
+  OrganismIdentity:
+    attributes:
+      reported_name:
+        required: true
+      strain_label: {}
+      strain_identifier: {}
+      taxon_id:
+        pattern: ^NCBITaxon:[1-9][0-9]*$
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  SourcedText:
+    attributes:
+      summary:
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  ReportedQuantity:
+    description: Retain the source literal, unit and denominator/basis; numeric fields
+      are transcriptions, never new conversions or ratios.
+    attributes:
+      reported_value:
+        required: true
+      qualifier:
+        range: QuantityQualifier
+        required: true
+      value:
+        range: float
+      lower_bound:
+        range: float
+      upper_bound:
+        range: float
+      unit:
+        required: true
+      basis:
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  VolumeObservation:
+    attributes:
+      kind:
+        range: VolumeKind
+        required: true
+      component: {}
+      quantity:
+        range: ReportedQuantity
+        required: true
+        inlined: true
+  ScaleCondition:
+    attributes:
+      condition_id:
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+      name:
+        required: true
+      kind:
+        range: ConditionKind
+        required: true
+      description:
+        required: true
+      strain_context:
+        range: SourcedText
+        inlined: true
+      volumes:
+        range: VolumeObservation
+        multivalued: true
+        inlined_as_list: true
+      medium:
+        range: SourcedText
+        inlined: true
+      scale_down_target:
+        range: SourcedText
+        inlined: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  ScaleMeasurement:
+    attributes:
+      measurement_id:
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+      condition_id:
+        required: true
+      reference_condition_id: {}
+      endpoint:
+        range: Endpoint
+        required: true
+      name:
+        required: true
+      quantity:
+        range: ReportedQuantity
+        required: true
+        inlined: true
+      evidence_level:
+        range: EvidenceLevel
+        required: true
+      sampling_context:
+        required: true
+  ScaleComparison:
+    attributes:
+      comparison_id:
+        required: true
+        pattern: ^[a-z0-9]+(?:-[a-z0-9]+)*$
+      kind:
+        range: ComparisonKind
+        required: true
+      condition_ids:
+        required: true
+        multivalued: true
+        minimum_cardinality: 2
+      measurement_ids:
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+      endpoint:
+        range: Endpoint
+        required: true
+      comparability:
+        range: Comparability
+        required: true
+      comparability_basis:
+        required: true
+      interpretation:
+        required: true
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  PiscesLink:
+    description: External flowsheet metadata and link only. No flowsheet, unit-operation
+      or techno-economic content is stored.
+    attributes:
+      resource_identifier:
+        required: true
+        pattern: ^SFID-[1-9][0-9]*$
+      label:
+        required: true
+      url:
+        required: true
+        pattern: ^https://projectpisces\.org/flowsheets/[1-9][0-9]*$
+      relation:
+        range: PiscesRelation
+        required: true
+      scope:
+        required: true
+      accessed_at:
+        required: true
+        pattern: ^20[0-9]{2}-
+      evidence:
+        range: EvidenceItem
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        minimum_cardinality: 1
+  ResearchGap:
+    attributes:
+      scope:
+        range: GapScope
+        required: true
+      condition_id: {}
+      reason:
+        required: true

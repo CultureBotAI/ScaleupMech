@@ -1,0 +1,38 @@
+[project]
+name = "scaleupmech"
+version = "0.1.0"
+description = "Evidence-backed organism and strain scale-transfer observations"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+license = "CC0-1.0"
+dependencies = ["linkml>=1.10", "linkml-runtime>=1.10", "jsonschema>=4", "pyyaml>=6", "kg-microbe-orchestration"]
+
+[project.scripts]
+scaleupmech = "scaleupmech.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=9", "ruff==0.16.3"]
+
+[tool.uv.sources]
+kg-microbe-orchestration = { git = "https://github.com/CultureBotAI/culturebotai-claw.git", rev = "88e719d5480d0008d6ce082510dcd066775f232b" }
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+scaleupmech = ["schema/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
