@@ -1,0 +1,83 @@
+{
+  "baseline_sha256": "a6264ee672356de99bc61254250fbbd52d0e0c1fe5024875619bf8ab1fc8ad44",
+  "baseline_version": "1.0.0",
+  "canonical_source_ref": "ab4d641c1718b1edb4cca8e6a1b38258371e0de0",
+  "config_sha256": "1c5567d3a5eb08cc8d191c0f21070d8cfe32675c473f2b3b999b3b23c225ebda",
+  "files": {
+    ".claude/skills/evolve-mech-workflow/SKILL.md": {
+      "component": "skill:evolve-mech-workflow",
+      "managed": {
+        "adaptation": "cdd32cecd92ab01d575b249c4d82ae0b3afbcabe7471e01a75589052029a6f5a",
+        "authority": "d6c1bdba0c19fde91728bf281e32ad78ee29050ed842fedd429a2260a3654d4c",
+        "closure": "8722ce5287908d2a2b2177a69b2fe535f9f3b47d261e8ac25d4ac6a580464951",
+        "evidence": "977be9099f390dd4ac63683104c9b5384fb389470b824cec291b2e3b039ba1af",
+        "infrastructure": "becc692f115ac37aa1dd532099464ccd54abac2a72c75662cec65e9b8fbb4090",
+        "reviews": "9b6201d70ba0142ac56217b89395e693a371e73dd2b756c673f9340173aadb4b"
+      }
+    },
+    ".claude/skills/manage-identifiers/SKILL.md": {
+      "component": "skill:manage-identifiers",
+      "managed": {
+        "choosing-a-scheme": "db0283667f7ee5a6cc7a68f1774caeb67daf74ecc228b186c9fbd11744ddaa44",
+        "describing-siblings": "65cdba03b5b1a7aec3011920933a04ca4bb3cdac849aa268648f6a41cd5ca6cb",
+        "hygiene": "ad90b6354877e30880f3bf6967513c7bc811ec98e84299df552124b36e778523",
+        "the-invariants": "afc721fa2080f3de8917e6314df33f6330389ac6bfae584fc609c476793a9c85"
+      }
+    },
+    ".claude/skills/review-open-issues/SKILL.md": {
+      "component": "skill:review-open-issues",
+      "managed": {
+        "file": "bce1f7f5df1fbe457d3c216fa5c0ff2563c5201d820f4bc1dc3dd5f6a51bdaa1"
+      }
+    },
+    ".claude/skills/review-yaml-category/SKILL.md": {
+      "component": "skill:review-yaml-category",
+      "managed": {
+        "evidence-rules": "811f6bfc014259dbc6e25d1356c532f594cbc999b4162d07a1e822138f03e50d",
+        "missing-things": "bdcb15bfa20f71e21d174eb88d043fefaa50e09c8c043f814a0186dcc1202584",
+        "output": "963eb1d14c8652c01f8b32d27b2b7af361e60749548270baaa127b1c3777d05c",
+        "scope": "8e9304b7df91fafdbb8d443e5d9d8787f5f60f94373d61b11d0768b1334ccc7d",
+        "structured-source-cross-checks": "04acb1811e79b5e6bc2588f5a24b0c46a0fead2fc99c5d1d04a985275b2b075c",
+        "the-contract": "b55b25ea50f96967f2e7c181b3f6882881834f2cf672dc2e36a6198dca4dc284",
+        "workflow": "7806f7a8b073f104a69e9d6d4abb59a2ce0f57fa40dc87b6fd4cc527743a5589"
+      }
+    },
+    ".claude/skills/review-yaml-record/SKILL.md": {
+      "component": "skill:review-yaml-record",
+      "managed": {
+        "evidence-rules": "cc488fd29728636cc6fe3b3ca2990a6132ad485870e072ec4e0e73f767a41061",
+        "missing-things": "8af8a3c1e75659959e55e0eb0fc4536e0841221594e2fc7f98949e0e30de1dca",
+        "output": "0dd64765908bc9a7fba6639c98e814c432aeca3105bf30aa83d2dfa6c9c9d94e",
+        "scope": "57ad6cdf82fdb6936e885b1ac083cd9aa7904f1845d3a14859a454f255c3fa16",
+        "structured-source-cross-checks": "991e9de5cc9b029d6c650b110a3a923568fd2435e35792ab2d86220e1636e33e",
+        "the-contract": "c0b372044c01183c84b8496e1a8a1a73aa020ef671f16997f16e722f82b0a145",
+        "workflow": "813a7835046c7bdff8339fb9ec33568dbe8f168a004de333fd30865fdcaabc92"
+      }
+    },
+    ".claude/skills/triage-and-resolve-issues/SKILL.md": {
+      "component": "skill:triage-and-resolve-issues",
+      "managed": {
+        "budget": "f5950ea51b4e04300d3b14bcfcc4466d6fb845c5ebea254e639bc43926038714",
+        "evidence": "26a785e7ec84ea2c74f6b9e899704e7874f99f084379cf3d639239cb72edf098",
+        "scope": "882b12b64eea54e5ff5e7958b8cc5e522c3d1f5f463d2f800901c55b4905631c",
+        "triage": "a99f2639cf5f23f46f153ef3a7bb16f4b5760d1e5f75095d5c23a799afd4689d"
+      }
+    },
+    "workflow/parent/mech-cycle.yaml": {
+      "component": "workflow:parent",
+      "managed": {
+        "file": "0d3e218c22c4ffe4e6dcddce8287d0177aaa52f637e156df1c737e4e7d84f913"
+      }
+    },
+    "workflow/parent/workflow.yaml": {
+      "component": "workflow:parent",
+      "managed": {
+        "file": "d09655a47773f78379aeaced45af01a7659987046d32e258f3d74f20fea2b281"
+      }
+    }
+  },
+  "repository": "scaleupmech",
+  "schema_version": 1,
+  "source_ref": "f6a00874ed153154feb26918933f2cd8110c5ec8",
+  "status": "candidate"
+}
