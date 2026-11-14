@@ -1,0 +1,6 @@
+version: 1
+repository: CultureBotAI/ScaleupMech
+skills:
+  - .claude/skills/curate-scale-transfer/SKILL.md
+rubrics:
+  - docs/record-review-profile.md

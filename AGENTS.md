@@ -1,0 +1,17 @@
+# ScaleupMech agent instructions
+
+Read the README and `just --list`. ScaleupMech owns organism/strain cultivation-scale evidence, not process flowsheets or techno-economic models. Keep the repository private until the user explicitly decides otherwise.
+
+- Verify current files and remote revisions before reporting facts or status. Absence searches must include ignored files (`rg --no-ignore --hidden`).
+- Work only in clones/worktrees under `~/agent-work/ScaleupMech/`. Retain source caches, helper scripts, review batches and handoffs there, never `/tmp`, `/private/tmp` or `$TMPDIR`. Disposable test fixtures are the exception. Push authorized commits the same day and verify exact remote heads; do not force-push.
+- Preserve the source-reported organism and strain label. Do not infer a strain identifier or taxonomy mapping from a familiar species name. Explicitly record missing strain information.
+- Separate nominal vessel, working, initial-medium, inoculum, actual-culture and final-broth volumes. Separate STR/PFR or other experimentally reported components using the volume component field. Never add components to manufacture an unreported working volume.
+- Preserve each reported quantity literal, qualifier, unit and basis/denominator. Numeric values are transcriptions only. Do not infer missing results, calculate new ratios, convert units or invent yield denominators. Keep unresolved interpretation explicit.
+- Distinguish observed cultivation, experimental scale-down, simulated scale-down and modeled reference conditions. A scale-down target is not an observed manufacturing-scale fermentation. Keep source-reported calculations and model predictions distinct from direct observations.
+- Comparisons reference actual condition/measurement IDs and the source's explicit comparability basis. Shared endpoint names, unit strings or source existence alone do not establish comparability. Preserve material, medium, timepoint and strain limits.
+- PISCES is links only: never copy flowsheet, unit-operation or TEA content. Retain only verified resource metadata, citations and external URLs with explicit context-only scope. URL/SFID syntax is not resource-existence proof and does not establish process equivalence.
+- Preserve source licences and attribution. Read primary sources; an offline schema or source-binding audit cannot establish scientific support. Source snapshots containing external full text stay outside the repository unless their redistribution is verified and required.
+- Use `just new-history` for record creation and updates. Dry-run first; `--apply` uses a locked, staged, recoverable record/history transaction. Existing history is append-only. Native records use deterministic JSON as a YAML subset; shared YAML serialization remains unverified.
+- Governed files and their pin are immutable locally. Install through claw's supported governance sync from a published immutable revision. Keep dependency and lockfile pinned to that same revision; never patch governed tests or payloads to obtain a pass.
+- Run `just check` and `just check-vendored`. Repaired failure modes require meaningful regression tests and fresh-process mutations proving the tests fail without each fix.
+- Follow `docs/record-reviews.md` and `docs/record-review-profile.md`; persist scientific reviews through the canonical helper. Every PR needs independent adversarial review, issues for confirmed defects, fixes, re-review and green checks. Stop before merging. No auto-merge, at-mentions or input to other sessions.
