@@ -1,0 +1,240 @@
+---
+name: review-yaml-record
+description: "Review one ScaleupMech YAML record without editing it: verify identity, source support, evidence placement, completeness, and the exact changes a curator would need. Use when asked to audit, inspect, spot-check, or review a named record. Not for bulk sampling, curation edits, paid research, or GitHub mutation."
+allowed-tools: Bash, Read, Grep, Glob, WebSearch, WebFetch, Write
+metadata:
+  category: review
+  requires_database: false
+  requires_internet: true
+  version: 2.0.0
+---
+
+# Review one ScaleupMech YAML record
+
+- Repository: `CultureBotAI/ScaleupMech`
+- Records: `data/scale_transfers/*.yaml`
+- Schema: `src/scaleupmech/schema/scaleupmech.yaml`
+
+## The Contract
+
+<!-- canonical:begin the-contract -->
+**Durable session state.**
+Use the gitignored `<repo>/.temp/` as the durable work root for review campaigns,
+worktrees, batch state, draft review bundles and handoffs. Use
+`~/agent-work/<repo>/` when a separate clone is needed. Verify `.temp/` is ignored
+before use; provision a missing ignore rule through an authorized repository
+change. Keep maintained helpers and accepted evidence in their native tracked
+directories; a durable scratch root does not replace their provenance contract.
+
+Never store session state or helper scripts in `/tmp/`, `/private/tmp/` or `$TMPDIR`.
+Only disposable caches and pytest temporary fixtures may use system temp roots.
+Use a unique subdirectory for each task and preserve other sessions' state.
+
+Report every auxiliary clone for identity verification and inventory in
+session_repository_roots, and owned campaign/handoff directories in
+session_state_paths. Missing inventory is unknown, not healthy. Report new paths
+to the supervisor/operator; do not edit live configuration or expand authority.
+
+For authorized Git work, push each committed batch branch to `origin` the same
+day, whether or not a PR is opened. Verify the exact pushed head with the remote;
+a local commit or remote-tracking ref alone is not publication proof. Inspect
+the repository's current workflow triggers before claiming a branch push runs
+no CI. A goal delivering commits cannot close while recorded commits exist only
+locally. Publication failure is a retained blocker, never permission to discard
+the branch. This rule grants no Git mutation, merge, cleanup or provider
+authorization beyond the task and the skill's existing boundaries.
+
+Produce a read-only judgement of one record: what is sound, what is unsupported
+or internally inconsistent, what is materially incomplete, and what bounded
+checks would resolve the remaining uncertainty.
+
+Reviewing is not curation. A review request authorizes reads, validation
+commands, one new structured YAML/Markdown review bundle described below, and
+a concise final summary; it does not authorize editing a record, regenerating
+products, spending provider credits, contacting anyone, or creating or mutating
+GitHub issues, pull requests, comments, labels, or settings.
+
+Resolve exactly one target before judging anything. If a label, slug, or
+identifier matches several records, stop and disambiguate; a thorough review of
+the wrong record is still wrong.
+
+Read the entire target file before making a finding. Projections, indexes,
+rendered pages, and search snippets are useful leads, but they hide context and
+cannot support a record-level verdict on their own.
+<!-- canonical:end the-contract -->
+
+## Scope
+
+<!-- canonical:begin scope -->
+Review records from this repository's declared corpus, including an exact frozen
+snapshot row when the local profile uses that surface. Read
+`docs/record-review-profile.md` for the active native review entrypoints, local
+rubrics, validators, and maintained input ownership. A curation skill is not a
+prerequisite for reviewing a record.
+
+For a generated record, identify the maintained table, overlay, source transform
+or seeder that owns a future fix. Do not patch records, generated artifacts,
+pages, caches, or cross-repository outputs. Only the new review bundle is written.
+
+Preserve local claim types, priority rules, scoring definitions, and scientific
+status/history gates. The shared shape standardizes observations; it does not
+replace the Mech's field-by-field rubric or authorize status promotion.
+<!-- canonical:end scope -->
+
+## Evidence Rules
+
+<!-- canonical:begin evidence-rules -->
+- Verify every stable identifier, DOI, PMID, ontology CURIE, source accession,
+  and internal reference that the record relies on.
+- Attach evidence to the narrowest claim it supports. A source that supports
+  one definition, member, mechanism edge, ingredient, example, or organism does
+  not automatically support the whole record.
+- Treat search results, raw research reports, generated summaries, and rendered
+  pages as leads. Only inspected source text can support a claim.
+- Keep direct quotations short and exact. Interpretation belongs in notes or in
+  the review report, not inside quoted snippets.
+- Preserve scope. Evidence about one strain, protein, medium formulation,
+  habitat, condition, or experiment is not evidence for a broader class unless
+  the source makes that generalization.
+- Preserve conflicts. If two inspected sources disagree, report the
+  disagreement and its scope instead of choosing the convenient one.
+- A near miss is not a match. Do not ground a record to a plausible broader or
+  adjacent term; leave unsupported identity claims flagged as unresolved.
+<!-- canonical:end evidence-rules -->
+
+## Structured Source Cross-Checks
+
+<!-- canonical:begin structured-source-cross-checks -->
+Use structured source adapters before open-ended web search when this record
+names a gene, locus tag, UniProt accession, regulator, pathway, stress response,
+trait, or transcriptomics dataset that may already be represented in a shared
+database.
+
+For iModulonDB candidates, first resolve the runner. In the commands below,
+`<kg-microbe-sources>` means either an installed `kg-microbe-sources` console
+script or `uv run --project <claw-root> kg-microbe-sources` from a local
+`culturebotai-claw` checkout. If neither runner is available, record the
+structured adapter as unavailable and fall back to inspected iModulonDB source
+pages or open web search.
+
+- Run `<kg-microbe-sources> imodulondb datasets` to find covered
+  organism/dataset keys.
+- Run `<kg-microbe-sources> imodulondb search --organism <organism> --dataset
+  <dataset> --query <term>` for a record gene, locus, regulator, protein name,
+  stress-response term, or iModulon name that matches a covered organism.
+- Run `<kg-microbe-sources> imodulondb summarize --organism <organism>
+  --dataset <dataset> --k <component>` for any iModulon hit that would inform
+  the record verdict.
+- Record useful `organism/dataset/component` and `organism/dataset/gene` keys
+  under **Evidence** or **Additional Notes**, and keep any copied summary table
+  small enough to justify why the record is or is not supported.
+
+iModulon membership is computational expression-module evidence. It can support
+a bounded transcriptomic context finding for a covered strain, gene, regulator,
+or protein, but it is not direct proof of a phenotype, MIC, natural-product
+identity, cell-structure localization, habitat assertion, medium recipe, or
+medium-ingredient identity. If no covered organism/dataset matches the target,
+write that iModulonDB was not applicable; absence from iModulonDB is not
+negative evidence.
+<!-- canonical:end structured-source-cross-checks -->
+
+## Missing Things
+
+<!-- canonical:begin missing-things -->
+Before reporting that a record, source file, evidence object, decision row,
+overlay, generated product, or referenced artifact is absent, search for the
+identifier, label, and slug with a gitignore-independent search such as
+`rg --no-ignore --hidden`, `rg -uu`, `grep -r`, or `find`.
+
+Say what the exhaustive search covered. If you used an ordinary ignored-aware
+search, call the miss provisional.
+<!-- canonical:end missing-things -->
+
+## Workflow
+
+<!-- canonical:begin workflow -->
+1. Read the local guidance that names exact validators and write boundaries:
+   `AGENTS.md` (`CLAUDE.md`), `justfile`, `docs/record-review-profile.md`, its local rubrics,
+   and `docs/record-reviews.md` for the shared output contract.
+2. Resolve one record under the declared corpus or native frozen-row selector. Confirm
+   its class, identifier, label, source provenance, grounding status, evidence
+   entries, discussion or quality flags, generated status, and curation history
+   shape.
+3. Run the schema, strict, term, reference, and history validators documented
+   for this record in this repository. Do not invent a focused validator for a
+   category the repository exposes only as a full-corpus check; run the
+   narrowest documented validator and report any full-corpus-only, missing
+   dependency, cache, network, or skipped check.
+4. Verify identity first: confirm the file denotes the requested biological or
+   chemical thing, not a sibling, example, variant, source artifact, generated
+   copy, or similarly named class.
+5. Apply the local checklist claim by claim. For every material assertion, say
+   whether the nearest cited source supports exactly that claim.
+6. Classify findings by severity:
+   **blocker** for wrong identity, invalid YAML, broken references, or a claim
+   that makes the record denote the wrong thing;
+   **major** for unsupported evidence, wrong ontology grounding, scope
+   inflation, a missing required representation, or a systemic curation bug;
+   **minor** for style, weak wording, redundant evidence, or non-blocking
+   provenance gaps.
+7. Report the exact follow-up: which maintained input should change, which
+   generator should be rerun, which validator would prove the fix, and which
+   uncertainty remains genuinely unresolved.
+<!-- canonical:end workflow -->
+
+## Output
+
+<!-- canonical:begin output -->
+Save one immutable structured review bundle for the resolved record
+using the CLAW-governed contract in `docs/record-reviews.md` and
+`schema/record_review.yaml`. Preserve the local rubric identified by
+`docs/record-review-profile.md`.
+
+- Capture actual UTC start/finish, reviewer identity and independence, exact
+  target IDs/locators, Git base, input hashes, and generated-input owners.
+- Retain every check and its real result, domain assessments, inspected evidence,
+  normalized findings, native rules/severity rationale, proposed actions with
+  acceptance checks, and explicit limitations. Do not equate a deterministic
+  check with scientific review.
+- Use `kind: record`; it identifies exactly one target.
+- Invoke `uv run python scripts/record_review.py inspect --targets <targets.yaml>`
+  before assessment, then `validate <completed-review.yaml>` and
+  `save --content <completed-review.yaml>` with the same script. Recheck changed
+  inputs instead of silently refreshing their hashes.
+- The saver writes
+  `reviews/structured/<YYYYMMDDTHHMMSSZ>-<slug>/review.yaml` plus `review.md`.
+  YAML is authoritative; do not hand-edit the rendered Markdown or overwrite an
+  earlier bundle. Run `uv run python scripts/record_review.py check` afterward.
+- If required checks are unavailable after the target is resolved, save an honest
+  partial/blocked observation. If the shared saver itself cannot run, report
+  that persistence is blocked; session-only prose is not a saved review.
+- Retain stable issue keys and exact `previous_occurrences` when reassessing a
+  finding. A later clean report does not close earlier unresolved findings.
+- Do not append curation/history events or promote native scientific status.
+  Those require a separately authorized curation change and native gates.
+
+Do not create a report for an unresolved ambiguous target. In the final response,
+link both saved files and summarize scope, verdict, findings by severity, and
+unavailable checks. Existing ad hoc Markdown is historical, not the output format
+for new reviews.
+<!-- canonical:end output -->
+
+## Native review integration
+
+Read `.claude/skills/curate-scale-transfer/SKILL.md` and
+`docs/record-review-profile.md` for this corpus's scientific rules. Native checks
+are `just check` and `just check-vendored`. The read-only native validator is
+`uv run --locked scaleupmech validate`; it checks closed LinkML shape,
+source/identity boundaries and append-only history references. Structural checks
+do not establish scientific support.
+
+Use `just new-history` for an explicitly authorized scientific change, first
+without `--apply`, then with it after inspecting the validated proposed record.
+Its required actor identifies the actual curator; never attribute agent work to
+the user. Agent-authored changes must explicitly use `--actor-type ai_agent`
+and supply the actual actor, model and agent tool where applicable; the native
+default is human. Preserve existing history, exact source provenance and governed files.
+
+This review skill does not invoke the writer. Persist observations through the
+existing governed saver and native rubric; maintain scientific evidence scope
+and do not promote status based on a validator pass.
