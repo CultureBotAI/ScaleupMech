@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "repository": "scaleupmech",
+  "source_ref": "f6a00874ed153154feb26918933f2cd8110c5ec8",
+  "components": {
+    "skill:repository-freshness": {
+      "action": "defer",
+      "reason": "Existing freshness candidate is independently governed; template adoption does not install or activate a freshness runtime.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:triage-and-resolve-issues": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:evolve-mech-workflow": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:manage-identifiers": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:next-tasks": {
+      "action": "defer",
+      "reason": "This repository uses GitHub issues and the infrastructure intake ledger; it has no maintained NEXT_TASKS.md contract.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:curate-yaml-record": {
+      "action": "defer",
+      "reason": "The native curate-scale-transfer skill and new-history writer own scientific curation; generic history/identifier assumptions require a separate domain adaptation.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:fetch-source": {
+      "action": "defer",
+      "reason": "No maintained fixed-URL fetch recipe and source validation contract is adopted; preserve existing source provenance and native seed audit.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:id-label-correspondence": {
+      "action": "defer",
+      "reason": "Governed validator payload is present but a reviewed native ontology correspondence adapter is not adopted.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:schema-gap-analysis": {
+      "action": "defer",
+      "reason": "Native closed-schema validation exists, but schema synchronization and generator drift adapters are deferred pending a measured domain integration.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:review-open-issues": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:review-yaml-category": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:review-yaml-record": {
+      "action": "adopt",
+      "reason": "Native tests, structured review and scientific skill provide the inspected infrastructure prerequisites; this installs a candidate, not runtime authority.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:scalability-and-health": {
+      "action": "defer",
+      "reason": "Shared page budget and site contract configuration is not adopted; preserve existing native site checks where present.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:stats-report": {
+      "action": "defer",
+      "reason": "Shared corpus statistics fields have not been measured and declared; native validation remains the authoritative record check.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "skill:metpo-proposal": {
+      "action": "defer",
+      "reason": "No native ontology proposal production contract is adopted; record identity/grounding does not authorize upstream ontology proposals.",
+      "evidence": [
+        "AGENTS.md",
+        "justfile",
+        ".claude/skills/curate-scale-transfer/SKILL.md",
+        "conf/record_review.yaml"
+      ]
+    },
+    "workflow:parent": {
+      "action": "adopt",
+      "reason": "Inert pinned parent/schema snapshots support validation of the native candidate profile; no runtime adoption or cycle activation.",
+      "evidence": [
+        "workflow/mech-workflow.yaml",
+        "docs/mech-template-adoption.md"
+      ]
+    }
+  },
+  "native_checks": [
+    [
+      "just",
+      "check"
+    ],
+    [
+      "just",
+      "check-vendored"
+    ]
+  ],
+  "extensions": [
+    "AGENTS.md",
+    "justfile",
+    ".claude/skills/curate-scale-transfer/SKILL.md",
+    "conf/record_review.yaml",
+    "docs/record-review-profile.md",
+    "workflow/mech-workflow.yaml",
+    "INFRA_TASKS.md",
+    ".claude/skills/template-infrastructure/SKILL.md",
+    "docs/mech-template-adoption.md"
+  ],
+  "native_identity": {
+    "schema_paths": [
+      "src/scaleupmech/schema/scaleupmech.yaml"
+    ],
+    "record_globs": [
+      "data/scale_transfers/*.yaml"
+    ]
+  }
+}

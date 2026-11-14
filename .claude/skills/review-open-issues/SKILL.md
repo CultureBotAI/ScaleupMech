@@ -1,0 +1,91 @@
+---
+name: review-open-issues
+description: "Sweep and prioritize ScaleupMech's complete open GitHub issue queue against what this repository actually guarantees — its schema, its curated corpus, its validation gates, and the vendored artifacts it shares with the rest of the fleet. Use for full backlog triage or deciding what is genuinely urgent; it is read-only and is not permission to close issues, mutate another repository, or implement fixes."
+category: workflow
+requires_database: false
+requires_internet: true
+version: 1.0.0
+tags: [issues, triage, backlog, priority, read-only, reporting]
+---
+
+# Review and prioritize open issues
+
+Produce a complete, dependency-aware triage of ScaleupMech's open
+issues.
+
+This is a read-only review. It does not implement fixes, close or edit issues,
+or touch another repository. Its output is a ranking with reasons.
+
+
+**Durable session state.**
+Use the gitignored `<repo>/.temp/` as the durable work root for review campaigns,
+worktrees, batch state, draft review bundles and handoffs. Use
+`~/agent-work/<repo>/` when a separate clone is needed. Verify `.temp/` is ignored
+before use; provision a missing ignore rule through an authorized repository
+change. Keep maintained helpers and accepted evidence in their native tracked
+directories; a durable scratch root does not replace their provenance contract.
+
+Never store session state or helper scripts in `/tmp/`, `/private/tmp/` or `$TMPDIR`.
+Only disposable caches and pytest temporary fixtures may use system temp roots.
+Use a unique subdirectory for each task and preserve other sessions' state.
+
+Report every auxiliary clone for identity verification and inventory in
+session_repository_roots, and owned campaign/handoff directories in
+session_state_paths. Missing inventory is unknown, not healthy. Report new paths
+to the supervisor/operator; do not edit live configuration or expand authority.
+
+For authorized Git work, push each committed batch branch to `origin` the same
+day, whether or not a PR is opened. Verify the exact pushed head with the remote;
+a local commit or remote-tracking ref alone is not publication proof. Inspect
+the repository's current workflow triggers before claiming a branch push runs
+no CI. A goal delivering commits cannot close while recorded commits exist only
+locally. Publication failure is a retained blocker, never permission to discard
+the branch. This rule grants no Git mutation, merge, cleanup or provider
+authorization beyond the task and the skill's existing boundaries.
+
+## Scope
+
+- Repository: `CultureBotAI/ScaleupMech`
+- Package: `src/scaleupmech`
+- Schema: `src/scaleupmech/schema/scaleupmech.yaml`
+- Curated records: `data/scale_transfers/*.yaml`
+- Checkout resolved through `SCALEUPMECH_ROOT`
+
+## Sweep the whole queue first
+
+```bash
+gh issue list -R CultureBotAI/ScaleupMech --state open --limit 200 \
+  --json number,title,labels,createdAt,updatedAt,comments
+```
+
+Read every one before ranking any. A queue triaged in the order it happens to
+be listed reproduces the listing order, not a judgement.
+
+## Rank by what is weakened, not by age
+
+For each issue, answer three questions:
+
+1. **What does it break?** A wrong ontology grounding in `data/scale_transfers/*.yaml` is
+   published data other repositories consume. A flaky test is a signal problem.
+   A missing docstring is neither.
+2. **Who is standing on it?** A defect in a vendored artifact reaches every
+   Mech. One in `src/scaleupmech` reaches this repository's consumers. One
+   in a one-off script reaches whoever runs it next.
+3. **Is it load-bearing for something else open?** An issue that blocks three
+   others outranks its own severity.
+
+Recency is not a signal. An issue filed today about a typo is below one filed
+in April about a gate that silently passes.
+
+## Say what you could not determine
+
+An issue you could not rank because it needs a decision, a credential, or a
+corpus you cannot read is a real finding. Report it as unranked with the reason
+rather than guessing a position for it — a confident ranking that quietly
+omits what it could not see is worse than a shorter one that says so.
+
+## Output
+
+A ranked list, each entry carrying: the issue number, one line on what it
+weakens, who depends on that, and what would have to be true to close it.
+Group anything you could not rank at the end under its reason.

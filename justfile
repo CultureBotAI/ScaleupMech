@@ -35,3 +35,8 @@ check-review-event-base:
 
 audit-seed:
     uv run --locked python -m scaleupmech.seed_audit
+
+# Template tooling is independently pinned; the governed project dependency is unchanged.
+check-template:
+    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@f6a00874ed153154feb26918933f2cd8110c5ec8" python -m kg_microbe_skills.template_cli check --target-root . --config workflow/mech-template.json
+    uv run --isolated --no-project --with "kg-microbe-orchestration @ git+https://github.com/CultureBotAI/culturebotai-claw.git@f6a00874ed153154feb26918933f2cd8110c5ec8" python -m kg_microbe_workflows validate --profile workflow/mech-workflow.yaml --parent workflow/parent/mech-cycle.yaml --schema workflow/parent/workflow.yaml --repository-key scaleupmech

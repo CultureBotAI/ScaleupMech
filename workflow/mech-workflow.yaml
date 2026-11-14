@@ -1,0 +1,84 @@
+schema_version: 2.0.0
+profile_id: scaleupmech-template-candidate
+profile_version: 1.0.0
+repository_key: scaleupmech
+github_repository: CultureBotAI/ScaleupMech
+adaptation_skill: .claude/skills/evolve-mech-workflow/SKILL.md
+parent:
+  id: mech-goal-cycle
+  version: 2.0.0
+  sha256: 0d3e218c22c4ffe4e6dcddce8287d0177aaa52f637e156df1c737e4e7d84f913
+  schema_sha256: d09655a47773f78379aeaced45af01a7659987046d32e258f3d74f20fea2b281
+  repository: CultureBotAI/culturebotai-claw
+  revision: f6a00874ed153154feb26918933f2cd8110c5ec8
+stages:
+- stage: 1
+  key: open_issue_triage
+  goal_text: "Use the triage-and-resolve-issues skill on the supervisor-frozen open-issue\
+    \ inventory. Assign severity with reasons, retain stable groups and plans, resolve\
+    \ all critical and high issues or hold on their blocking prerequisites, then work\
+    \ the 1\u20132 largest remaining groups within one shared four-hour wall-clock\
+    \ budget. Preserve every disposition and close through the standard publication\
+    \ sequence."
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/triage-and-resolve-issues/SKILL.md
+  applicability: enabled
+- stage: 2
+  key: add_records
+  goal_text: Use the add-record skill to review evidence and add supported new records
+    until the bounded search frontier yields no new records.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/curate-scale-transfer/SKILL.md
+  applicability: enabled
+- stage: 3
+  key: causal_graphs
+  goal_text: Use the causal-graph skill to review, edit, and update causal graphs
+    in every applicable record.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/curate-scale-transfer/SKILL.md
+  applicability: blocked
+  applicability_reason: The inspected native schema/writer has no adopted causal-graph
+    adapter; a domain design and validated writer are prerequisites.
+- stage: 4
+  key: protein_examples
+  goal_text: Review all applicable records and add evidence-backed UniProt protein
+    examples, especially for gene and protein elements of causal graphs.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/curate-scale-transfer/SKILL.md
+  applicability: blocked
+  applicability_reason: The inspected native schema/writer has no adopted protein-example
+    adapter; evidence-backed cross-corpus links are not a protein-example curation
+    implementation.
+- stage: 5
+  key: record_review
+  goal_text: Use the record-review skill to review every record and save versioned
+    machine-readable findings and human-readable reports, explicitly recording empty
+    outcomes and carrying open or deferred findings forward.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/review-yaml-record/SKILL.md
+  - .claude/skills/review-yaml-category/SKILL.md
+  applicability: enabled
+- stage: 6
+  key: resolve_review_findings
+  goal_text: Freeze the completed review scope, group related findings into real GitHub
+    issues, resolve those groups, validate the fixes, and preserve finding-to-issue-to-fix
+    traceability.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/curate-scale-transfer/SKILL.md
+  - .claude/skills/review-yaml-record/SKILL.md
+  applicability: enabled
+- stage: 7
+  key: infrastructure
+  goal_text: Freeze the INFRA_TASKS.md backlog into a bounded implementation plan,
+    make or link GitHub issues, implement and validate that plan, and retain deferred
+    or newly discovered tasks for the next cycle.
+  skill_paths:
+  - .claude/skills/evolve-mech-workflow/SKILL.md
+  - .claude/skills/template-infrastructure/SKILL.md
+  applicability: enabled
