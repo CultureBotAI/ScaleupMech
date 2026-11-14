@@ -1,0 +1,928 @@
+# Independent scientific review of three initial strain-scale evidence records
+
+- Review: 20261109T033448Z-independent-initial-scaleup-seed
+- Repository: CultureBotAI/ScaleupMech
+- Started UTC: 2026-11-09T03:19:32Z
+- Finished UTC: 2026-11-09T03:34:48Z
+- Reviewer: Codex root independent scientific reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+All three selected records are positively assessed against primary evidence: two observed scale-transfer studies and one physical scale-down experiment, covering eight conditions, seventeen measurements and six comparisons. The source and PISCES limits are explicit. No unresolved finding remains in this bounded scientific review; hosted CI, private fleet admission and user merge decisions are separate gates.
+
+## Scope And Provenance
+
+Every maintained record in the initial Scaleup seed, with four primary sources, 27 retained locators and 71 scientific bindings.
+
+Selection: All data/scale_transfers/*.yaml at the inspected commit.
+Coverage: full; 3 reviewed / 3 in the declared population.
+Source: git_commit at Git base 9eb11e5de74e9ffb49fc4b7cb52d053aa4120314.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| ScaleupMech:cgl-ile8-isoleucine-scale-transfer | data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml | maintained | cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels |
+| ScaleupMech:dm1945x3-cadaverine-physical-scale-down | data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml | maintained | DM1945x3 cadaverine response in a physical STR/PFR scale-down model |
+| ScaleupMech:zx01-gp1-kla-scale-transfer | data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml | maintained | ZX01 GP-1 transfer from nominal 5 L to 500 L |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent complete offline suite | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | 220 passed, 3 expected governed skips in 18.19 seconds. |
+| Closed record/history and source-contract validation | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | Native CLI validation passed for three records/history pairs. Source audit passed: 3 records, 8 conditions, 17 measurements, 6 comparisons, 4 sources, 27 locators, 71 bindings, zero scientific PISCES links. |
+| Native code and regression lint | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | All checks passed. |
+| Canonical governed bytes | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | All 22 governed artifacts match immutable claw bootstrap 88e719d5480d0008d6ce082510dcd066775f232b. |
+| Independent primary-value and locator verification | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | All 17 reported values and units, volume distinctions, four source byte digests, selected HTML digests, Table S11 and corrected GP-1 locators independently passed. |
+
+## Scientific And Domain Assessments
+
+### Published ZX01 strain
+
+identity: supported. Targets: ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+The original species spelling and strain ZX01/CGMCC 4893 are preserved without inventing an external taxonomic mapping.
+
+### Four-scale GP-1 and kLa verification
+
+quantity: supported. Targets: ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+Tables 2, 4 and 5 support nominal 5/15/70/500 L, working 3.5/10/50/350 L, four-batch final GP-1 means 3.92/4.03/3.82/4.20 mg/L and kLa means 21.62/22.80/23.20/22.24 per hour. Source precision and distinct 12-hour kLa versus final batch titer contexts are retained.
+
+### Source-specific observed transfer
+
+scope: supported. Targets: ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+The same-strain comparison uses similar kLa and is supported as an observed transfer. Agitation, vessel geometry and inoculum differences prevent treating vessel size as an isolated causal intervention; kLa is not substituted for OTR.
+
+### Full recombinant strain identity
+
+identity: supported. Targets: ScaleupMech:dm1945x3-cadaverine-physical-scale-down.
+
+The source full DM1945 delta-act3 Ptuf-ldcC_OPT label and DM1945x3 abbreviation are retained; no manufacturing-scale cultivation of this strain is created.
+
+### STR control versus SDR 12
+
+quantity: supported. Targets: ScaleupMech:dm1945x3-cadaverine-physical-scale-down.
+
+The retained approximate control concentration 19.5 g/L, SDR 12 mean 5.3 g/L and source-calculated 73 percent loss are supported at the reported 39-hour endpoint. The PFR Table 1 value 0.3 L and Methods 320 mL disagreement remains explicit rather than silently resolved.
+
+### Experimental scale-down evidence
+
+representation: supported. Targets: ScaleupMech:dm1945x3-cadaverine-physical-scale-down.
+
+The STR/PFR apparatus is a physical experiment that models gradients. It remains SCALE_DOWN_MODEL with experimental outcomes, not an observed industrial scale transfer or a purely numerical prediction. Abstract averages across multiple experiments are not attributed to SDR 12.
+
+### Optimized cgl-Ile8 condition
+
+identity: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer.
+
+The final cgl-Ile8 strain and optimized 5 L condition are distinguished from its earlier unoptimized result. The 50 L condition is retained with incomplete operating context.
+
+### Reported titer, rate and unresolved yield basis
+
+quantity: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer.
+
+The source supports optimized 5 L values 48.49 g/L, 0.31 g/g and 1.01 g/L/h and 50 L values 50.12 g/L, 0.32 g/g and 1.04 g/L/h. Medium 2.5 L and inoculum 400 mL are not added into an invented working volume. The supplement contains glucose and cane molasses, so an undefined yield denominator is not called glucose consumption.
+
+### Bounded source comparison
+
+scope: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer.
+
+Titer and productivity are the paper's same-strain scalability comparison with explicit operating-context limits. Source-labelled yields remain reported calculations and are excluded from formal yield comparisons because denominator accounting is unresolved.
+
+### Primary-source retention and ownership
+
+provenance: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+All three maintained records have native history, bounded source projections, exact source digests and field-level bindings. These deterministic checks preserve the reviewed assertions but do not certify arbitrary future literature interpretations.
+
+### PISCES links-only boundary
+
+scope: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+All three records carry explicit unmatched-PISCES gaps. SFID-413 is navigation only and is not attached as scientific support for these experiments. The schema and audit reject payload fields and process-equivalence assertions.
+
+### Corrected GP-1 locator coverage
+
+consistency: supported. Targets: ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+External issue 1 is fixed: inoculum preparation cites Methods 4.2 paragraph 1 in addition to medium paragraph 2; bench duration cites Methods 4.7. Independent removal controls are refused even with other valid citations present. No prior structured finding lineage is invented.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| zhou-1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot1-molecules-23-00125 | supports | The paper identifies ZX01 and culture collection strain CGMCC4893; species spelling is retained as published. |
+| zhou-2 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec2dot6-molecules-23-00125/p[3] | supports | The study reports pilot-scale verification at similar kLa and compares outcomes with bench-scale batches. |
+| zhou-3 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#molecules-23-00125-t005 | supports | Table 5 lists total vessel volume 5 L. |
+| zhou-4 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot2-molecules-23-00125/p[2] | supports | The paper separately specifies seed and fermentation media. |
+| zhou-5 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot2-molecules-23-00125/p[1] | supports | The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures. |
+| zhou-6 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#molecules-23-00125-t002 | supports | The repeated verification table reports the nominal 5 L condition and its batch averages. |
+| zhou-7 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot7-molecules-23-00125 | supports | Methods report 7-day cultivation for the selected production vessel scale. |
+| zhou-8 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot4-molecules-23-00125 | supports | GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint. |
+| zhou-9 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot6-molecules-23-00125 | supports | kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h. |
+| zhou-10 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#molecules-23-00125-t004 | supports | The repeated verification table reports the nominal 15 L condition and its batch averages. |
+| zhou-11 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot8-molecules-23-00125 | supports | Methods report 7-day cultivation for the selected production vessel scale. |
+| olughu-1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[2] | supports | The Methods identify the recombinant strain and its DM1945x3 abbreviation. |
+| olughu-2 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0006/p[4] | supports | SDR 12 belongs to the combined-gradient, constant-cell-entry-frequency experimental series. |
+| olughu-3 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0006/p[6] | supports | A bench-scale stirred-tank control is compared with SDR 12, a physical two-compartment culture with combined oxygen, glucose and pH gradients. |
+| olughu-4 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[3] | supports | Methods list the batch medium composition. |
+| olughu-5 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[4] | supports | Methods separately list the fed-batch medium composition. |
+| olughu-6 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-tbl-0001 | supports | Table 1 identifies the feed and base addition locations for the control and SDR 12. |
+| olughu-7 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[6] | supports | Methods identify a nominal 5 L stirred-tank vessel. |
+| olughu-8 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0006/p[5] | supports | The authors describe the extreme experimental gradients as a way to investigate sensitivity to heterogeneous larger-scale environments. |
+| olughu-9 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[9] | supports | The study reports 39 h total fermentation time for all simulations. |
+| olughu-10 | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-fig-0004 | supports | Figure 4 describes final cadaverine concentration after 39 h and standard-deviation error bars from two biological replicates. |
+| cao-1 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/; html:#sec2/p[1] | supports | The source identifies cgl-Ile8 as the final strain used in the optimized 5 L and 50 L comparison. |
+| cao-2 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/; html:#Sec21/p[1] | supports | The Results distinguish 5 L pH/DO optimization from the subsequent 50 L scalability experiment. |
+| cao-3 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/; html:#Sec13/p[2] | supports | Methods state 2.5 L fermentation medium in the 5 L vessel. |
+| cao-4 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/; html:#Sec12/p[1] | supports | The Methods identifies a concentrated glucose feeding solution. |
+| cao-supp-1 | https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx; docx:TableS11 | supports | The fermentation-tank medium table includes both glucose and cane molasses. |
+| cao-supp-2 | https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx; docx:FigS20 | supports | Figure S 20 labels the 50 L cgl-Ile8 fermentation curve and a time axis extending to 48 h; no working volume or yield definition is supplied. |
+| native-gate | https://github.com/CultureBotAI/ScaleupMech/tree/9eb11e5de74e9ffb49fc4b7cb52d053aa4120314; justfile; src/scaleupmech/validate.py; tests/ | supports | Independent full test run: 220 passed and three expected empty-adapter skips. Native lint, three record/history pairs and all 71 scientific bindings passed; all 22 governed artifacts match the published pin. |
+| binding-rereview | https://github.com/CultureBotAI/ScaleupMech/issues/1; src/scaleupmech/seed_audit.py; tests/test_seed_audit.py | supports | The missing inoculum and bench-duration citations are present. Removing either while retaining another valid citation is independently refused. Author fresh-process mutation accepts both invalid inputs when only the evidence-coverage guard is removed, and restored tests pass. |
+| rights | curation/source-catalogue.json; LICENSE-DATA; four primary-source entries | supports | The three primary papers declare CC-BY-4.0; the Cao supplementary table is distributed with that article. Raw article and supplement hashes and every selected HTML digest were independently checked. Full source files stay outside this repository. |
+| pisces-boundary | https://projectpisces.org/flowsheets/413; Page title and SFID metadata only; curation/pisces-navigation.json | supports | The verified Corn Stover to Ethanol page is an unrelated navigation example. No scientific relationship to the three seed records is asserted; no flowsheet, unit-operation or TEA payload was obtained for this seed. |
+
+## Limits And Additional Notes
+
+- These three studies do not establish a general scale-up rule or organism-wide performance.
+- The cadaverine study is experimental scale-down; no industrial cultivation outcome for this strain is inferred. Its PFR volume discrepancy remains unresolved.
+- The isoleucine yield denominator and full 50 L operating context are unresolved. No formal yield comparison, inferred working volume or new ratio is supplied.
+- GP-1 kLa values are similar rather than identical; no oxygen transfer rate is calculated.
+- No scientific PISCES match has been verified for these records. SFID-413 is unrelated navigation metadata only.
+- This scientific review does not claim hosted checks have completed, private fleet access is configured, a shared governance release is active, or any PR is authorized to merge.
+- The source state is git_commit after independent verification that every inspected input hash matches both the exact committed blob and the clean review worktree.
+- External issues 1 and 3 were fixed before this reviewed seed head. Issue 1 received primary-source and exact-input re-review; issue 3 received separate scaffold re-review. They remain GitHub issues pending the user's merge decisions.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T033448Z-independent-initial-scaleup-seed
+kind: batch
+repository: CultureBotAI/ScaleupMech
+title: Independent scientific review of three initial strain-scale evidence records
+started_at: '2026-11-09T03:19:32Z'
+finished_at: '2026-11-09T03:34:48Z'
+reviewer:
+  identity: Codex root independent scientific reviewer
+  kind: agent
+  independence: independent
+  independence_basis: The reviewer did not author or edit the scaffold, seed records,
+    source projections or audit implementation. Separate agents authored them. Root
+    independently read primary evidence, filed confirmed findings, tested the fixes,
+    and assessed the frozen seed commit.
+skill: .claude/skills/curate-scale-transfer/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'All three selected records are positively assessed against primary evidence:
+  two observed scale-transfer studies and one physical scale-down experiment, covering
+  eight conditions, seventeen measurements and six comparisons. The source and PISCES
+  limits are explicit. No unresolved finding remains in this bounded scientific review;
+  hosted CI, private fleet admission and user merge decisions are separate gates.'
+source:
+  git_revision: 9eb11e5de74e9ffb49fc4b7cb52d053aa4120314
+  state: git_commit
+  inputs:
+  - path: AGENTS.md
+    sha256: 121383a325204eccff91e11e7f7ee309f8fdfb78c106050c498ff88a0fb911f2
+    role: context
+  - path: LICENSE-DATA
+    sha256: 6bd3d54d63ce22e9c95a912e87754f81dbd380fa1bff4d6f03e25c3dacac285a
+    role: context
+  - path: README.md
+    sha256: c593eebffb4bdba373cc761813af2371e0a02d88445dfe817fa87582a2384206
+    role: context
+  - path: curation/pisces-navigation.json
+    sha256: d987c5b246491fd033901729e34e262076157fb172edaf774c38eec553d64120
+    role: context
+  - path: curation/seed-bindings.json
+    sha256: 43b99b14401c648068c3fd4ad75394cd2d57b3e61fd318e59139fb515d68a01b
+    role: context
+  - path: curation/source-catalogue.json
+    sha256: e6e496c936d7931b2a5e06465b5232122947d835c2f3e3f37ca9b0eb02517bc9
+    role: context
+  - path: curation/sources/cao-supp.json
+    sha256: 03b88bad88c17045d0107c83da9bb2ec8d46179e258eca0474d9baa76462e9cf
+    role: context
+  - path: curation/sources/cao.json
+    sha256: 448c11d7ec2abde52643fec46f27797aa6d13c6d112e80644a8429f4df1c57e6
+    role: context
+  - path: curation/sources/olughu.json
+    sha256: b20e6b334886a5e87a6df46075de677d444cc8fb2d89f845e1ed4a1c7401bfba
+    role: context
+  - path: curation/sources/zhou.json
+    sha256: 737aab4fd35734a07edecd086c639d0ef74282b1a75faffc409355f84dec98d7
+    role: context
+  - path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+    sha256: 98d0b1026206e2a3d35dc808f1917d8059620f5538a79d6168e7438e6b994e4c
+    role: target
+  - path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+    sha256: 63dbbe6777062acf70e5883dc42f1edf1eaeb8a2d64217f0994597e4d718c85e
+    role: target
+  - path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+    sha256: 71998ffc156d2da0504bf77a5e32da058949259788f0c73eb67dc1705ccf615b
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: f2faaf44603e804e377f10f63d9ed5a523b8557e610f68c20bf02c24a02fd0d4
+    role: context
+  - path: docs/seed-provenance.md
+    sha256: ab13d2c6948692a1233669f2e4e193f4d0431bbb5444e7e634a302c69e5f5d18
+    role: context
+  - path: history/records/cgl-ile8-isoleucine-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-f2fa90.yaml
+    sha256: 8e09d4e3f484221e414c319ed2d9dd47f698684f463eef7cccd6d3e0b09fb326
+    role: context
+  - path: history/records/dm1945x3-cadaverine-physical-scale-down/2026-11-09T032831Z-scaleup-stream-c-526d60.yaml
+    sha256: 408b5bcf5ab3b5902efc5e50db7bff1cca8fcb4e3d2fcb1893199c6ce1aa9e23
+    role: context
+  - path: history/records/zx01-gp1-kla-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-bace3d.yaml
+    sha256: 159d6d17195f8b2c8ec04318236e0c9fcdf493e79ac574c72e34910c2fe90f80
+    role: context
+  - path: justfile
+    sha256: d236a29d4ffd56abe277d180d278e8cf5cd3d0b300f890f1df869005d964d542
+    role: context
+  - path: pyproject.toml
+    sha256: da86e15f002efe5987a33344dfa020c717b6b6314b2f1c7fa0753a794be1cc9f
+    role: context
+  - path: scripts/.vendored_canon_ref
+    sha256: 8e48289d61ed8cc42fe6e19eb3e083aa21359928898e3d09c0f7e33751aa7465
+    role: context
+  - path: src/scaleupmech/cli.py
+    sha256: 1dc9a8410e37c9f90cdda69ddb99320562a92d6a08c0f53cee898e493f8bed37
+    role: context
+  - path: src/scaleupmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/scaleupmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/scaleupmech/schema/scaleupmech.yaml
+    sha256: f6837fbd7cbf708bb6abc30dcb327d126b9a114473c2c4edf261c44d866d9061
+    role: context
+  - path: src/scaleupmech/seed_audit.py
+    sha256: c29f1440cf6e69c66b5618fda88fa8a01fa07b6f7b8af7beadb369d68de98699
+    role: context
+  - path: src/scaleupmech/validate.py
+    sha256: 71b133b9f817b0bccfcd0130176e84beee2e3d87f49329e9116cee2429c2f009
+    role: context
+  - path: tests/test_seed_audit.py
+    sha256: ae84822860c38b7168b11f85bbe79d06b86e1848cd027fa6140f8065f5f03a08
+    role: context
+  - path: uv.lock
+    sha256: 3dd8ca9bf1160d849008948ae9e74e5058973f85772a90f93461126fdc1aba20
+    role: context
+scope:
+  description: Every maintained record in the initial Scaleup seed, with four primary
+    sources, 27 retained locators and 71 scientific bindings.
+  selection: All data/scale_transfers/*.yaml at the inspected commit.
+  coverage: full
+  population_size: 3
+  reviewed_target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  exclusions:
+  - target: Unselected scale-transfer literature and PISCES flowsheet payloads
+    reason: The denominator is the selected initial seed, not a systematic literature
+      census. Flowsheet, unit-operation and TEA content is explicitly outside scope.
+targets:
+- target_id: ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+  label: cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+    role: native record maintained through just new-history
+- target_id: ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+  label: DM1945x3 cadaverine response in a physical STR/PFR scale-down model
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+    role: native record maintained through just new-history
+- target_id: ScaleupMech:zx01-gp1-kla-scale-transfer
+  path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+  label: ZX01 GP-1 transfer from nominal 5 L to 500 L
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+    role: native record maintained through just new-history
+checks:
+- check_id: tests
+  name: Independent complete offline suite
+  status: passed
+  required: true
+  command: UV_PROJECT_ENVIRONMENT=/Users/marcin/agent-work/ScaleupMech/repo/.venv
+    PYTHONPATH=src:. TMPDIR=/Users/marcin/agent-work/ScaleupMech/review-seed/.temp/runtime
+    uv run --no-sync pytest -q --basetemp .temp/root-seed-tests
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 220 passed, 3 expected governed skips in 18.19 seconds.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-gate
+- check_id: native-validation
+  name: Closed record/history and source-contract validation
+  status: passed
+  required: true
+  command: UV_PROJECT_ENVIRONMENT=/Users/marcin/agent-work/ScaleupMech/repo/.venv
+    PYTHONPATH=src:. uv run --no-sync python -m scaleupmech.seed_audit
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Native CLI validation passed for three records/history pairs. Source audit
+    passed: 3 records, 8 conditions, 17 measurements, 6 comparisons, 4 sources, 27
+    locators, 71 bindings, zero scientific PISCES links.'
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-gate
+- check_id: lint
+  name: Native code and regression lint
+  status: passed
+  required: true
+  command: UV_PROJECT_ENVIRONMENT=/Users/marcin/agent-work/ScaleupMech/repo/.venv
+    PYTHONPATH=src:. uv run --no-sync ruff check src tests/test_native.py scripts/check_review_event_base.py
+    tests/test_review_event_base.py tests/test_seed_audit.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: All checks passed.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-gate
+- check_id: governance
+  name: Canonical governed bytes
+  status: passed
+  required: true
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: All 22 governed artifacts match immutable claw bootstrap 88e719d5480d0008d6ce082510dcd066775f232b.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-gate
+- check_id: primary-verification
+  name: Independent primary-value and locator verification
+  status: passed
+  required: true
+  command: uv run --no-sync python /Users/marcin/agent-work/ScaleupMech/review-probes/verify_seed_primary.py
+    /Users/marcin/agent-work/ScaleupMech/review-seed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: All 17 reported values and units, volume distinctions, four source byte
+    digests, selected HTML digests, Table S11 and corrected GP-1 locators independently
+    passed.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - rights
+  - binding-rereview
+evidence:
+- evidence_id: zhou-1
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot1-molecules-23-00125
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The paper identifies ZX01 and culture collection strain CGMCC4893; species
+    spelling is retained as published.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-2
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec2dot6-molecules-23-00125/p[3]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The study reports pilot-scale verification at similar kLa and compares
+    outcomes with bench-scale batches.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-3
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#molecules-23-00125-t005
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Table 5 lists total vessel volume 5 L.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-4
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot2-molecules-23-00125/p[2]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The paper separately specifies seed and fermentation media.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-5
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot2-molecules-23-00125/p[1]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The 500 L inoculum uses a seed fermentor, whereas smaller production vessels
+    use shake-flask seed cultures.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-6
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#molecules-23-00125-t002
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The repeated verification table reports the nominal 5 L condition and its
+    batch averages.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-7
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot7-molecules-23-00125
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods report 7-day cultivation for the selected production vessel scale.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-8
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot4-molecules-23-00125
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: GP-1 was extracted and quantified by HPLC; this is a measured concentration
+    endpoint.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-9
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot6-molecules-23-00125
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: kLa was determined by dynamic gassing-out measurements during logarithmic
+    growth at 12 h.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-10
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#molecules-23-00125-t004
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The repeated verification table reports the nominal 15 L condition and
+    its batch averages.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: zhou-11
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot8-molecules-23-00125
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods report 7-day cultivation for the selected production vessel scale.
+  snapshot_sha256: 3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888
+- evidence_id: olughu-1
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[2]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The Methods identify the recombinant strain and its DM1945x3 abbreviation.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-2
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0006/p[4]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: SDR 12 belongs to the combined-gradient, constant-cell-entry-frequency
+    experimental series.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-3
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0006/p[6]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: A bench-scale stirred-tank control is compared with SDR 12, a physical
+    two-compartment culture with combined oxygen, glucose and pH gradients.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-4
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[3]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods list the batch medium composition.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-5
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[4]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods separately list the fed-batch medium composition.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-6
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-tbl-0001
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Table 1 identifies the feed and base addition locations for the control
+    and SDR 12.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-7
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[6]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods identify a nominal 5 L stirred-tank vessel.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-8
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0006/p[5]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The authors describe the extreme experimental gradients as a way to investigate
+    sensitivity to heterogeneous larger-scale environments.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-9
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[9]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The study reports 39 h total fermentation time for all simulations.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: olughu-10
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-fig-0004
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Figure 4 describes final cadaverine concentration after 39 h and standard-deviation
+    error bars from two biological replicates.
+  snapshot_sha256: 99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58
+- evidence_id: cao-1
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/
+  locator: html:#sec2/p[1]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The source identifies cgl-Ile8 as the final strain used in the optimized
+    5 L and 50 L comparison.
+  snapshot_sha256: 0636e47e306d3d50566c137ae3085257c97c1363ff3e4faeedc446e15fa78a13
+- evidence_id: cao-2
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/
+  locator: html:#Sec21/p[1]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The Results distinguish 5 L pH/DO optimization from the subsequent 50 L
+    scalability experiment.
+  snapshot_sha256: 0636e47e306d3d50566c137ae3085257c97c1363ff3e4faeedc446e15fa78a13
+- evidence_id: cao-3
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/
+  locator: html:#Sec13/p[2]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Methods state 2.5 L fermentation medium in the 5 L vessel.
+  snapshot_sha256: 0636e47e306d3d50566c137ae3085257c97c1363ff3e4faeedc446e15fa78a13
+- evidence_id: cao-4
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/
+  locator: html:#Sec12/p[1]
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The Methods identifies a concentrated glucose feeding solution.
+  snapshot_sha256: 0636e47e306d3d50566c137ae3085257c97c1363ff3e4faeedc446e15fa78a13
+- evidence_id: cao-supp-1
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx
+  locator: docx:TableS11
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: The fermentation-tank medium table includes both glucose and cane molasses.
+  snapshot_sha256: 439cf3fdb80e85c1b5315526f099616164856b2364a1e1f476c09be4ebbea0e5
+- evidence_id: cao-supp-2
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx
+  locator: docx:FigS20
+  accessed_at: '2026-11-09T03:33:45Z'
+  support: supports
+  summary: Figure S 20 labels the 50 L cgl-Ile8 fermentation curve and a time axis
+    extending to 48 h; no working volume or yield definition is supplied.
+  snapshot_sha256: 439cf3fdb80e85c1b5315526f099616164856b2364a1e1f476c09be4ebbea0e5
+- evidence_id: native-gate
+  kind: validation
+  reference: https://github.com/CultureBotAI/ScaleupMech/tree/9eb11e5de74e9ffb49fc4b7cb52d053aa4120314
+  locator: justfile; src/scaleupmech/validate.py; tests/
+  accessed_at: '2026-11-09T03:34:48Z'
+  support: supports
+  summary: 'Independent full test run: 220 passed and three expected empty-adapter
+    skips. Native lint, three record/history pairs and all 71 scientific bindings
+    passed; all 22 governed artifacts match the published pin.'
+- evidence_id: binding-rereview
+  kind: validation
+  reference: https://github.com/CultureBotAI/ScaleupMech/issues/1
+  locator: src/scaleupmech/seed_audit.py; tests/test_seed_audit.py
+  accessed_at: '2026-11-09T03:34:48Z'
+  support: supports
+  summary: The missing inoculum and bench-duration citations are present. Removing
+    either while retaining another valid citation is independently refused. Author
+    fresh-process mutation accepts both invalid inputs when only the evidence-coverage
+    guard is removed, and restored tests pass.
+- evidence_id: rights
+  kind: record_content
+  reference: curation/source-catalogue.json
+  locator: LICENSE-DATA; four primary-source entries
+  accessed_at: '2026-11-09T03:34:48Z'
+  support: supports
+  summary: The three primary papers declare CC-BY-4.0; the Cao supplementary table
+    is distributed with that article. Raw article and supplement hashes and every
+    selected HTML digest were independently checked. Full source files stay outside
+    this repository.
+- evidence_id: pisces-boundary
+  kind: authority
+  reference: https://projectpisces.org/flowsheets/413
+  locator: Page title and SFID metadata only; curation/pisces-navigation.json
+  accessed_at: '2026-11-09T03:34:48Z'
+  support: supports
+  summary: The verified Corn Stover to Ethanol page is an unrelated navigation example.
+    No scientific relationship to the three seed records is asserted; no flowsheet,
+    unit-operation or TEA payload was obtained for this seed.
+assessments:
+- assessment_id: gp1-identity
+  area: identity
+  topic: Published ZX01 strain
+  outcome: supported
+  summary: The original species spelling and strain ZX01/CGMCC 4893 are preserved
+    without inventing an external taxonomic mapping.
+  target_ids:
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - zhou-1
+  - zhou-2
+  - zhou-3
+  - zhou-4
+  - zhou-5
+  - zhou-6
+  - zhou-7
+  - zhou-8
+  - zhou-9
+  - zhou-10
+  - zhou-11
+- assessment_id: gp1-quantities
+  area: quantity
+  topic: Four-scale GP-1 and kLa verification
+  outcome: supported
+  summary: Tables 2, 4 and 5 support nominal 5/15/70/500 L, working 3.5/10/50/350
+    L, four-batch final GP-1 means 3.92/4.03/3.82/4.20 mg/L and kLa means 21.62/22.80/23.20/22.24
+    per hour. Source precision and distinct 12-hour kLa versus final batch titer contexts
+    are retained.
+  target_ids:
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - zhou-1
+  - zhou-2
+  - zhou-3
+  - zhou-4
+  - zhou-5
+  - zhou-6
+  - zhou-7
+  - zhou-8
+  - zhou-9
+  - zhou-10
+  - zhou-11
+- assessment_id: gp1-scope
+  area: scope
+  topic: Source-specific observed transfer
+  outcome: supported
+  summary: The same-strain comparison uses similar kLa and is supported as an observed
+    transfer. Agitation, vessel geometry and inoculum differences prevent treating
+    vessel size as an isolated causal intervention; kLa is not substituted for OTR.
+  target_ids:
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - zhou-1
+  - zhou-2
+  - zhou-3
+  - zhou-4
+  - zhou-5
+  - zhou-6
+  - zhou-7
+  - zhou-8
+  - zhou-9
+  - zhou-10
+  - zhou-11
+- assessment_id: cadaverine-identity
+  area: identity
+  topic: Full recombinant strain identity
+  outcome: supported
+  summary: The source full DM1945 delta-act3 Ptuf-ldcC_OPT label and DM1945x3 abbreviation
+    are retained; no manufacturing-scale cultivation of this strain is created.
+  target_ids:
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  evidence_ids:
+  - olughu-1
+  - olughu-2
+  - olughu-3
+  - olughu-4
+  - olughu-5
+  - olughu-6
+  - olughu-7
+  - olughu-8
+  - olughu-9
+  - olughu-10
+- assessment_id: cadaverine-quantities
+  area: quantity
+  topic: STR control versus SDR 12
+  outcome: supported
+  summary: The retained approximate control concentration 19.5 g/L, SDR 12 mean 5.3
+    g/L and source-calculated 73 percent loss are supported at the reported 39-hour
+    endpoint. The PFR Table 1 value 0.3 L and Methods 320 mL disagreement remains
+    explicit rather than silently resolved.
+  target_ids:
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  evidence_ids:
+  - olughu-1
+  - olughu-2
+  - olughu-3
+  - olughu-4
+  - olughu-5
+  - olughu-6
+  - olughu-7
+  - olughu-8
+  - olughu-9
+  - olughu-10
+- assessment_id: cadaverine-scope
+  area: representation
+  topic: Experimental scale-down evidence
+  outcome: supported
+  summary: The STR/PFR apparatus is a physical experiment that models gradients. It
+    remains SCALE_DOWN_MODEL with experimental outcomes, not an observed industrial
+    scale transfer or a purely numerical prediction. Abstract averages across multiple
+    experiments are not attributed to SDR 12.
+  target_ids:
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  evidence_ids:
+  - olughu-1
+  - olughu-2
+  - olughu-3
+  - olughu-4
+  - olughu-5
+  - olughu-6
+  - olughu-7
+  - olughu-8
+  - olughu-9
+  - olughu-10
+- assessment_id: isoleucine-identity
+  area: identity
+  topic: Optimized cgl-Ile8 condition
+  outcome: supported
+  summary: The final cgl-Ile8 strain and optimized 5 L condition are distinguished
+    from its earlier unoptimized result. The 50 L condition is retained with incomplete
+    operating context.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  evidence_ids:
+  - cao-1
+  - cao-2
+  - cao-3
+  - cao-4
+- assessment_id: isoleucine-quantities
+  area: quantity
+  topic: Reported titer, rate and unresolved yield basis
+  outcome: supported
+  summary: The source supports optimized 5 L values 48.49 g/L, 0.31 g/g and 1.01 g/L/h
+    and 50 L values 50.12 g/L, 0.32 g/g and 1.04 g/L/h. Medium 2.5 L and inoculum
+    400 mL are not added into an invented working volume. The supplement contains
+    glucose and cane molasses, so an undefined yield denominator is not called glucose
+    consumption.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  evidence_ids:
+  - cao-1
+  - cao-2
+  - cao-3
+  - cao-4
+  - cao-supp-1
+  - cao-supp-2
+- assessment_id: isoleucine-scope
+  area: scope
+  topic: Bounded source comparison
+  outcome: supported
+  summary: Titer and productivity are the paper's same-strain scalability comparison
+    with explicit operating-context limits. Source-labelled yields remain reported
+    calculations and are excluded from formal yield comparisons because denominator
+    accounting is unresolved.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  evidence_ids:
+  - cao-1
+  - cao-2
+  - cao-3
+  - cao-4
+  - cao-supp-1
+  - cao-supp-2
+- assessment_id: source-provenance
+  area: provenance
+  topic: Primary-source retention and ownership
+  outcome: supported
+  summary: All three maintained records have native history, bounded source projections,
+    exact source digests and field-level bindings. These deterministic checks preserve
+    the reviewed assertions but do not certify arbitrary future literature interpretations.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - rights
+  - native-gate
+- assessment_id: external-boundary
+  area: scope
+  topic: PISCES links-only boundary
+  outcome: supported
+  summary: All three records carry explicit unmatched-PISCES gaps. SFID-413 is navigation
+    only and is not attached as scientific support for these experiments. The schema
+    and audit reject payload fields and process-equivalence assertions.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - pisces-boundary
+  - native-gate
+- assessment_id: method-evidence-repair
+  area: consistency
+  topic: Corrected GP-1 locator coverage
+  outcome: supported
+  summary: 'External issue 1 is fixed: inoculum preparation cites Methods 4.2 paragraph
+    1 in addition to medium paragraph 2; bench duration cites Methods 4.7. Independent
+    removal controls are refused even with other valid citations present. No prior
+    structured finding lineage is invented.'
+  target_ids:
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - binding-rereview
+findings: []
+actions: []
+limitations:
+- These three studies do not establish a general scale-up rule or organism-wide performance.
+- The cadaverine study is experimental scale-down; no industrial cultivation outcome
+  for this strain is inferred. Its PFR volume discrepancy remains unresolved.
+- The isoleucine yield denominator and full 50 L operating context are unresolved.
+  No formal yield comparison, inferred working volume or new ratio is supplied.
+- GP-1 kLa values are similar rather than identical; no oxygen transfer rate is calculated.
+- No scientific PISCES match has been verified for these records. SFID-413 is unrelated
+  navigation metadata only.
+- This scientific review does not claim hosted checks have completed, private fleet
+  access is configured, a shared governance release is active, or any PR is authorized
+  to merge.
+notes:
+- The source state is git_commit after independent verification that every inspected
+  input hash matches both the exact committed blob and the clean review worktree.
+- External issues 1 and 3 were fixed before this reviewed seed head. Issue 1 received
+  primary-source and exact-input re-review; issue 3 received separate scaffold re-review.
+  They remain GitHub issues pending the user's merge decisions.
+links:
+- https://github.com/CultureBotAI/ScaleupMech/pull/4
+- https://github.com/CultureBotAI/ScaleupMech/issues/1
+- https://github.com/CultureBotAI/ScaleupMech/issues/3
+tags:
+- initial-seed
+- independent-review
+- scale-transfer
+- private
+```

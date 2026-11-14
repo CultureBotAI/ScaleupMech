@@ -1,0 +1,592 @@
+# Independent primary-source re-review of the template-integrated initial seed
+
+- Review: 20261114T204512Z-independent-intel-seed-rereview
+- Repository: CultureBotAI/ScaleupMech
+- Started UTC: 2026-11-14T20:36:51.721224Z
+- Finished UTC: 2026-11-14T20:45:12Z
+- Reviewer: Codex independent seed_source_review agent (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+All three selected records are positively assessed against primary evidence, with their original scientific limits preserved. This is a bounded source review of three studies, not merge authorization or a claim that every hosted gate has completed.
+
+## Scope And Provenance
+
+All three initial seed records, four primary sources, 27 locators and 71 scientific field bindings, including retained root limitations and gaps.
+
+Selection: Every data/scale_transfers/*.yaml at the frozen preparation commit.
+Coverage: full; 3 reviewed / 3 in the declared population.
+Source: git_commit at Git base fc99b736c9cffbd8a7cf3e2c0fb7d51a1ed5d81d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| ScaleupMech:cgl-ile8-isoleucine-scale-transfer | data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml | maintained | cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels |
+| ScaleupMech:dm1945x3-cadaverine-physical-scale-down | data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml | maintained | DM1945x3 cadaverine response in a physical STR/PFR scale-down model |
+| ScaleupMech:zx01-gp1-kla-scale-transfer | data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml | maintained | ZX01 GP-1 transfer from nominal 5 L to 500 L |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| native-validate | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | Validated 3 scale-transfer records |
+| native-schema | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | Closed LinkML schemas validated |
+| source-audit | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | {"comparisons": 6, "conditions": 8, "locators": 27, "measurements": 17, "records": 3, "scientific_pisces_links": 0, "source_bindings": 71, "sources": 4} |
+| source-regressions | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | .............................................                            [100%]<br>45 passed in 11.79s |
+| existing-review | passed | True | ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer | topClass is deprecated - use top_class<br>{<br>  "repository": "CultureBotAI/ScaleupMech",<br>  "valid_reviews": 1,<br>  "coverage": "declared_scopes_only"<br>} |
+
+## Scientific And Domain Assessments
+
+### ZX01 observed pilot-scale transfer
+
+quantity: supported. Targets: ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+All eight selected concentration/kLa literals and four vessel/working-volume pairs agree with the tables. Final concentration and 12-hour kLa remain distinct. Similar kLa does not establish identical inoculum, geometry, agitation or isolated scale causation.
+
+### DM1945x3 physical scale-down
+
+representation: supported. Targets: ScaleupMech:dm1945x3-cadaverine-physical-scale-down.
+
+The full strain, approximate control concentration, SDR 12 mean and source-reported relative loss are supported. STR/PFR volumes remain separate with the 0.3 L versus 320 mL discrepancy explicit. This is a laboratory experiment modeling gradients, not observed manufacturing cultivation.
+
+### cgl-Ile8 reported endpoints with unresolved yield basis
+
+quantity: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer.
+
+All six selected endpoint literals agree with the optimized nominal 5/50 L comparison. Initial medium and inoculum are distinct. The denominator, 50 L working volume and operating equivalence remain unresolved; no formal yield comparison or new rate is inferred.
+
+### Retained scientific boundaries
+
+scope: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+All three records retain their original limitations and research gaps. No organism-wide scale-up rule, external taxonomy equivalence, manufacturing observation or unreported metric is added.
+
+### Recovered evidence and historical review scope
+
+provenance: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+Every selected source passage is recoverable at the original text digest, and the supplement is byte-identical. Complete original HTML remains unavailable in the bounded local search; the new snapshots are separately identified. This does not broaden the earlier qualified review.
+
+### PISCES context-only navigation
+
+scope: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+All records remain unmatched to PISCES. Verified SFID-413 metadata provides unrelated navigation only. The existing no-payload and no-equivalence limits are preserved.
+
+### Current scientific source contract
+
+consistency: supported. Targets: ScaleupMech:cgl-ile8-isoleucine-scale-transfer, ScaleupMech:dm1945x3-cadaverine-physical-scale-down, ScaleupMech:zx01-gp1-kla-scale-transfer.
+
+Independent native/schema/source/regression checks pass at this exact input commit. The bounded contract binds retained claims and guards limitations and navigation metadata; deterministic equality does not establish general literature truth.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| zhou | https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/; html:#sec4dot1-molecules-23-00125; html:#sec2dot6-molecules-23-00125/p[3]; html:#molecules-23-00125-t005; html:#sec4dot2-molecules-23-00125/p[2]; html:#sec4dot2-molecules-23-00125/p[1]; html:#molecules-23-00125-t002; html:#sec4dot7-molecules-23-00125; html:#sec4dot4-molecules-23-00125; html:#sec4dot6-molecules-23-00125; html:#molecules-23-00125-t004; html:#sec4dot8-molecules-23-00125; html:#abstract1/p[1]; html:#sec2dot5-molecules-23-00125/p[1] | supports | Read all eleven retained selectors: strain, vessel/working volumes, medium and inoculum, verification tables, HPLC and kLa methods, and bench/pilot duration. Also checked the abstract scale wording and biomass discrepancy in Results2.5. All retained normalized selector digests match the original review. |
+| olughu | https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/; html:#jctb6248-sec-0005/p[2]; html:#jctb6248-sec-0006/p[4]; html:#jctb6248-sec-0006/p[6]; html:#jctb6248-sec-0005/p[3]; html:#jctb6248-sec-0005/p[4]; html:#jctb6248-tbl-0001; html:#jctb6248-sec-0005/p[6]; html:#jctb6248-sec-0006/p[5]; html:#jctb6248-sec-0005/p[9]; html:#jctb6248-fig-0004 | supports | Read all ten retained selectors: full strain, STR/PFR setup and compartments, batch/feed medium, control and SDR 12 results, experimental gradients and endpoint context. All normalized selector digests match the original review. |
+| cao | https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/; html:#sec2/p[1]; html:#Sec21/p[1]; html:#Sec13/p[2]; html:#Sec12/p[1]; html:#Sec14/p[1] | supports | Read all four retained selectors and general Methods Sec14: optimized strain, endpoints, distinct inoculum/medium volumes and concentrated glucose feed. All normalized selector digests match the original review. |
+| cao-supp | https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx; docx:TableS11; docx:FigS20 | supports | Read Table S11 and visually inspected Figure S20/image20.PNG. The DOCX byte hash exactly matches the original source. No plot values were digitized. |
+| native-checks | src/scaleupmech/seed_audit.py; Native/schema validation, source audit, source tests and require-reviews at the inspected commit | supports | The independently executed commands in checks all exited zero. Original records, source catalogue/projections, navigation, history and prior structured review are byte-identical to the original seed. |
+| source-recovery | curation/source-catalogue.json; Four original hashes and freshly fetched authoritative sources | partial | The original complete HTML files were not found in the bounded Intel search. New complete HTML hashes differ; all 25 selected-text digests match. The supplement matches its original whole-file digest. Historical hashes are preserved. |
+| rights | curation/source-catalogue.json; License notices of three PMC articles and linked Additional file 1 | supports | The article notices identify CC-BY-4.0. The linked Cao supplement has no inspected contrary notice. Source attribution remains; raw evidence stays outside tracked repository content. |
+| pisces | https://projectpisces.org/flowsheets/413; Page title and SFID metadata only | supports | The title still identifies Corn Stover to Ethanol, SFID-413. It is unrelated navigation, not a seed scientific match. No process payload was downloaded or reconstructed. |
+| historical-review | reviews/structured/20261109T033448Z-independent-initial-scaleup-seed/review.yaml; source.git_revision 9eb11e5de74e9ffb49fc4b7cb52d053aa4120314 | context_only | All 29 historical input hashes match that historical Git tree. Its qualified verdict and limitations remain historical evidence; template/closeout context changes are assessed anew here. |
+
+## Limits And Additional Notes
+
+- The three studies do not establish a general scale-up rule or organism-wide performance.
+- The cadaverine experiment is physical scale-down; its PFR-volume discrepancy remains unresolved.
+- The isoleucine yield denominator, productivity accounting and full 50 L operating context remain unresolved; no formal yield comparison is supplied.
+- GP-1 similar kLa is not identical oxygen-transfer rate or an isolated vessel-size intervention.
+- No scientific PISCES match is established; SFID-413 is unrelated navigation only.
+- Original complete HTML snapshots were not recovered locally. Fresh HTML has exact matching selected scientific text, and the supplement has the exact original whole-file hash.
+- Scientific acceptance does not certify hosted CI, repository visibility policy, fleet admission, deployment, runtime adoption or merge approval.
+- The earlier immutable review remains unchanged and valid against its historical source revision. This new observation assesses the current committed inputs.
+- Current visibility wording is treated as an API observation separate from private-policy constraints; no visibility or admission decision follows from this scientific review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261114T204512Z-independent-intel-seed-rereview
+kind: batch
+repository: CultureBotAI/ScaleupMech
+title: Independent primary-source re-review of the template-integrated initial seed
+started_at: '2026-11-14T20:36:51.721224Z'
+finished_at: '2026-11-14T20:45:12Z'
+reviewer:
+  identity: Codex independent seed_source_review agent
+  kind: agent
+  independence: independent
+  independence_basis: The reviewer did not author or edit records, projections, audit
+    implementation, integration or fixes. It independently retrieved/read authoritative
+    sources, visually inspected the supplement, checked hashes and ran the documented
+    validators.
+skill: .claude/skills/curate-scale-transfer/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: All three selected records are positively assessed against primary evidence,
+  with their original scientific limits preserved. This is a bounded source review
+  of three studies, not merge authorization or a claim that every hosted gate has
+  completed.
+source:
+  git_revision: fc99b736c9cffbd8a7cf3e2c0fb7d51a1ed5d81d
+  state: git_commit
+  inputs:
+  - path: AGENTS.md
+    sha256: 121383a325204eccff91e11e7f7ee309f8fdfb78c106050c498ff88a0fb911f2
+    role: context
+  - path: LICENSE-DATA
+    sha256: 6bd3d54d63ce22e9c95a912e87754f81dbd380fa1bff4d6f03e25c3dacac285a
+    role: context
+  - path: README.md
+    sha256: 87f1d796f5c186638a0f6d3a48160653b130215f2a8a6c1997fe6606657600e9
+    role: context
+  - path: curation/pisces-navigation.json
+    sha256: d987c5b246491fd033901729e34e262076157fb172edaf774c38eec553d64120
+    role: context
+  - path: curation/seed-bindings.json
+    sha256: 3269ffef7ccfd9024f400a743ce7c75741819c06e35bc129ff5dee7d0e165ba4
+    role: context
+  - path: curation/source-catalogue.json
+    sha256: e6e496c936d7931b2a5e06465b5232122947d835c2f3e3f37ca9b0eb02517bc9
+    role: context
+  - path: curation/sources/cao-supp.json
+    sha256: 03b88bad88c17045d0107c83da9bb2ec8d46179e258eca0474d9baa76462e9cf
+    role: context
+  - path: curation/sources/cao.json
+    sha256: 448c11d7ec2abde52643fec46f27797aa6d13c6d112e80644a8429f4df1c57e6
+    role: context
+  - path: curation/sources/olughu.json
+    sha256: b20e6b334886a5e87a6df46075de677d444cc8fb2d89f845e1ed4a1c7401bfba
+    role: context
+  - path: curation/sources/zhou.json
+    sha256: 737aab4fd35734a07edecd086c639d0ef74282b1a75faffc409355f84dec98d7
+    role: context
+  - path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+    sha256: 98d0b1026206e2a3d35dc808f1917d8059620f5538a79d6168e7438e6b994e4c
+    role: target
+  - path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+    sha256: 63dbbe6777062acf70e5883dc42f1edf1eaeb8a2d64217f0994597e4d718c85e
+    role: target
+  - path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+    sha256: 71998ffc156d2da0504bf77a5e32da058949259788f0c73eb67dc1705ccf615b
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: f2faaf44603e804e377f10f63d9ed5a523b8557e610f68c20bf02c24a02fd0d4
+    role: context
+  - path: docs/seed-provenance.md
+    sha256: 9bd165715d4742d1102918382ce2fc00c0ad0bfda7c911cd3d2e9d2c3a96e3c4
+    role: context
+  - path: history/records/cgl-ile8-isoleucine-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-f2fa90.yaml
+    sha256: 8e09d4e3f484221e414c319ed2d9dd47f698684f463eef7cccd6d3e0b09fb326
+    role: context
+  - path: history/records/dm1945x3-cadaverine-physical-scale-down/2026-11-09T032831Z-scaleup-stream-c-526d60.yaml
+    sha256: 408b5bcf5ab3b5902efc5e50db7bff1cca8fcb4e3d2fcb1893199c6ce1aa9e23
+    role: context
+  - path: history/records/zx01-gp1-kla-scale-transfer/2026-11-09T032831Z-scaleup-stream-c-bace3d.yaml
+    sha256: 159d6d17195f8b2c8ec04318236e0c9fcdf493e79ac574c72e34910c2fe90f80
+    role: context
+  - path: justfile
+    sha256: bb41d01d09d9c82fb6e1329f94ff8b816da64f3362ec7e11c62d2938fc8a76bd
+    role: context
+  - path: pyproject.toml
+    sha256: da86e15f002efe5987a33344dfa020c717b6b6314b2f1c7fa0753a794be1cc9f
+    role: context
+  - path: scripts/.vendored_canon_ref
+    sha256: 8e48289d61ed8cc42fe6e19eb3e083aa21359928898e3d09c0f7e33751aa7465
+    role: context
+  - path: src/scaleupmech/cli.py
+    sha256: 1dc9a8410e37c9f90cdda69ddb99320562a92d6a08c0f53cee898e493f8bed37
+    role: context
+  - path: src/scaleupmech/schema/history.yaml
+    sha256: b01b06f1b9a37db205c26c31ec0fd910690848507c7e1bfb73b424ac0829c52d
+    role: context
+  - path: src/scaleupmech/schema/mech_shared.yaml
+    sha256: c2e7054fd32635e380c698282bd886a9105861009b9f0474f02bb1b80865e895
+    role: context
+  - path: src/scaleupmech/schema/scaleupmech.yaml
+    sha256: f6837fbd7cbf708bb6abc30dcb327d126b9a114473c2c4edf261c44d866d9061
+    role: context
+  - path: src/scaleupmech/seed_audit.py
+    sha256: 5ee1795cf0d6c558765c984619724f65b9c45ee66fccd3a24f38871c90e74cd2
+    role: context
+  - path: src/scaleupmech/validate.py
+    sha256: 71b133b9f817b0bccfcd0130176e84beee2e3d87f49329e9116cee2429c2f009
+    role: context
+  - path: tests/test_seed_audit.py
+    sha256: caabb3b4650df8eaab9896d033ed05809a19a11b1e67e0119ec1455f114b1bb9
+    role: context
+  - path: uv.lock
+    sha256: 3dd8ca9bf1160d849008948ae9e74e5058973f85772a90f93461126fdc1aba20
+    role: context
+scope:
+  description: All three initial seed records, four primary sources, 27 locators and
+    71 scientific field bindings, including retained root limitations and gaps.
+  selection: Every data/scale_transfers/*.yaml at the frozen preparation commit.
+  coverage: full
+  population_size: 3
+  reviewed_target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  exclusions:
+  - target: Unselected literature, author raw data, process payloads and runtime activation
+    reason: The review denominator is the existing initial seed; no systematic literature
+      census, replication, process import or deployment was requested.
+targets:
+- target_id: ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+  label: cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/cgl-ile8-isoleucine-scale-transfer.yaml
+    role: native record maintained through just new-history
+- target_id: ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+  label: DM1945x3 cadaverine response in a physical STR/PFR scale-down model
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/dm1945x3-cadaverine-physical-scale-down.yaml
+    role: native record maintained through just new-history
+- target_id: ScaleupMech:zx01-gp1-kla-scale-transfer
+  path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+  label: ZX01 GP-1 transfer from nominal 5 L to 500 L
+  kind: maintained
+  record_class: ScaleTransferRecord
+  owner_paths:
+  - repository: CultureBotAI/ScaleupMech
+    path: data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml
+    role: native record maintained through just new-history
+checks:
+- check_id: native-validate
+  name: native-validate
+  status: passed
+  required: true
+  command: /Users/marcin/agent-work/ScaleupMech/seed-closeout-20261114/.venv/bin/python
+    -m scaleupmech.cli validate
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Validated 3 scale-transfer records
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+- check_id: native-schema
+  name: native-schema
+  status: passed
+  required: true
+  command: /Users/marcin/agent-work/ScaleupMech/seed-closeout-20261114/.venv/bin/python
+    -m scaleupmech.cli validate-schema
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Closed LinkML schemas validated
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+- check_id: source-audit
+  name: source-audit
+  status: passed
+  required: true
+  command: /Users/marcin/agent-work/ScaleupMech/seed-closeout-20261114/.venv/bin/python
+    -m scaleupmech.seed_audit
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '{"comparisons": 6, "conditions": 8, "locators": 27, "measurements": 17,
+    "records": 3, "scientific_pisces_links": 0, "source_bindings": 71, "sources":
+    4}'
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+- check_id: source-regressions
+  name: source-regressions
+  status: passed
+  required: true
+  command: /Users/marcin/agent-work/ScaleupMech/seed-closeout-20261114/.venv/bin/python
+    -m pytest -q tests/test_seed_audit.py -p no:cacheprovider --basetemp /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/scaleup-seed-closeout-20261114/scientific-pytest-fixtures
+  exit_code: 0
+  expected_exit_code: 0
+  summary: '.............................................                            [100%]
+
+    45 passed in 11.79s'
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+- check_id: existing-review
+  name: existing-review
+  status: passed
+  required: true
+  command: /Users/marcin/agent-work/ScaleupMech/seed-closeout-20261114/.venv/bin/python
+    scripts/record_review.py check --require-reviews --base 3a512d53e9b9d797cace768fea896a196ec24588
+  exit_code: 0
+  expected_exit_code: 0
+  summary: "topClass is deprecated - use top_class\n{\n  \"repository\": \"CultureBotAI/ScaleupMech\"\
+    ,\n  \"valid_reviews\": 1,\n  \"coverage\": \"declared_scopes_only\"\n}"
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+evidence:
+- evidence_id: zhou
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/
+  locator: html:#sec4dot1-molecules-23-00125; html:#sec2dot6-molecules-23-00125/p[3];
+    html:#molecules-23-00125-t005; html:#sec4dot2-molecules-23-00125/p[2]; html:#sec4dot2-molecules-23-00125/p[1];
+    html:#molecules-23-00125-t002; html:#sec4dot7-molecules-23-00125; html:#sec4dot4-molecules-23-00125;
+    html:#sec4dot6-molecules-23-00125; html:#molecules-23-00125-t004; html:#sec4dot8-molecules-23-00125;
+    html:#abstract1/p[1]; html:#sec2dot5-molecules-23-00125/p[1]
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  snapshot_sha256: aa67839dbba57cf2904203aa4328485db2265b0ceef331c92fa82975f01062ce
+  summary: 'Read all eleven retained selectors: strain, vessel/working volumes, medium
+    and inoculum, verification tables, HPLC and kLa methods, and bench/pilot duration.
+    Also checked the abstract scale wording and biomass discrepancy in Results2.5.
+    All retained normalized selector digests match the original review.'
+- evidence_id: olughu
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/
+  locator: html:#jctb6248-sec-0005/p[2]; html:#jctb6248-sec-0006/p[4]; html:#jctb6248-sec-0006/p[6];
+    html:#jctb6248-sec-0005/p[3]; html:#jctb6248-sec-0005/p[4]; html:#jctb6248-tbl-0001;
+    html:#jctb6248-sec-0005/p[6]; html:#jctb6248-sec-0006/p[5]; html:#jctb6248-sec-0005/p[9];
+    html:#jctb6248-fig-0004
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  snapshot_sha256: 7c83ee5a7d0eccc67d96b8f0bf2e8bf0f5886a7d0e3b1a400a98efb010043eac
+  summary: 'Read all ten retained selectors: full strain, STR/PFR setup and compartments,
+    batch/feed medium, control and SDR 12 results, experimental gradients and endpoint
+    context. All normalized selector digests match the original review.'
+- evidence_id: cao
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/
+  locator: html:#sec2/p[1]; html:#Sec21/p[1]; html:#Sec13/p[2]; html:#Sec12/p[1];
+    html:#Sec14/p[1]
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  snapshot_sha256: 21c1c5ab32f9dac3a97cd2f76271ab4a0417ff8d8882e72222212cb7dbd68583
+  summary: 'Read all four retained selectors and general Methods Sec14: optimized
+    strain, endpoints, distinct inoculum/medium volumes and concentrated glucose feed.
+    All normalized selector digests match the original review.'
+- evidence_id: cao-supp
+  kind: primary_source
+  reference: https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx
+  locator: docx:TableS11; docx:FigS20
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  snapshot_sha256: 439cf3fdb80e85c1b5315526f099616164856b2364a1e1f476c09be4ebbea0e5
+  summary: Read Table S11 and visually inspected Figure S20/image20.PNG. The DOCX
+    byte hash exactly matches the original source. No plot values were digitized.
+- evidence_id: native-checks
+  kind: validation
+  reference: src/scaleupmech/seed_audit.py
+  locator: Native/schema validation, source audit, source tests and require-reviews
+    at the inspected commit
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  summary: The independently executed commands in checks all exited zero. Original
+    records, source catalogue/projections, navigation, history and prior structured
+    review are byte-identical to the original seed.
+- evidence_id: source-recovery
+  kind: search
+  reference: curation/source-catalogue.json
+  locator: Four original hashes and freshly fetched authoritative sources
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: partial
+  summary: The original complete HTML files were not found in the bounded Intel search.
+    New complete HTML hashes differ; all 25 selected-text digests match. The supplement
+    matches its original whole-file digest. Historical hashes are preserved.
+  search_scope: Ignored-inclusive walk of ~/agent-work/ScaleupMech, ~/agent-work/XMechBay,
+    identity-validated Intel Scaleup checkout and prior template report/quarantine;
+    dependency/cache/Git metadata directories excluded, no symlink following, no other-host
+    access.
+- evidence_id: rights
+  kind: authority
+  reference: curation/source-catalogue.json
+  locator: License notices of three PMC articles and linked Additional file 1
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  summary: The article notices identify CC-BY-4.0. The linked Cao supplement has no
+    inspected contrary notice. Source attribution remains; raw evidence stays outside
+    tracked repository content.
+- evidence_id: pisces
+  kind: authority
+  reference: https://projectpisces.org/flowsheets/413
+  locator: Page title and SFID metadata only
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: supports
+  summary: The title still identifies Corn Stover to Ethanol, SFID-413. It is unrelated
+    navigation, not a seed scientific match. No process payload was downloaded or
+    reconstructed.
+- evidence_id: historical-review
+  kind: prior_review
+  reference: reviews/structured/20261109T033448Z-independent-initial-scaleup-seed/review.yaml
+  locator: source.git_revision 9eb11e5de74e9ffb49fc4b7cb52d053aa4120314
+  accessed_at: '2026-11-14T20:45:12Z'
+  support: context_only
+  summary: All 29 historical input hashes match that historical Git tree. Its qualified
+    verdict and limitations remain historical evidence; template/closeout context
+    changes are assessed anew here.
+assessments:
+- assessment_id: gp1
+  area: quantity
+  topic: ZX01 observed pilot-scale transfer
+  outcome: supported
+  summary: All eight selected concentration/kLa literals and four vessel/working-volume
+    pairs agree with the tables. Final concentration and 12-hour kLa remain distinct.
+    Similar kLa does not establish identical inoculum, geometry, agitation or isolated
+    scale causation.
+  target_ids:
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - zhou
+- assessment_id: cadaverine
+  area: representation
+  topic: DM1945x3 physical scale-down
+  outcome: supported
+  summary: The full strain, approximate control concentration, SDR 12 mean and source-reported
+    relative loss are supported. STR/PFR volumes remain separate with the 0.3 L versus
+    320 mL discrepancy explicit. This is a laboratory experiment modeling gradients,
+    not observed manufacturing cultivation.
+  target_ids:
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  evidence_ids:
+  - olughu
+- assessment_id: isoleucine
+  area: quantity
+  topic: cgl-Ile8 reported endpoints with unresolved yield basis
+  outcome: supported
+  summary: All six selected endpoint literals agree with the optimized nominal 5/50
+    L comparison. Initial medium and inoculum are distinct. The denominator, 50 L
+    working volume and operating equivalence remain unresolved; no formal yield comparison
+    or new rate is inferred.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  evidence_ids:
+  - cao
+  - cao-supp
+- assessment_id: limits
+  area: scope
+  topic: Retained scientific boundaries
+  outcome: supported
+  summary: All three records retain their original limitations and research gaps.
+    No organism-wide scale-up rule, external taxonomy equivalence, manufacturing observation
+    or unreported metric is added.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - zhou
+  - olughu
+  - cao
+  - cao-supp
+  - native-checks
+- assessment_id: provenance
+  area: provenance
+  topic: Recovered evidence and historical review scope
+  outcome: supported
+  summary: Every selected source passage is recoverable at the original text digest,
+    and the supplement is byte-identical. Complete original HTML remains unavailable
+    in the bounded local search; the new snapshots are separately identified. This
+    does not broaden the earlier qualified review.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - source-recovery
+  - historical-review
+  - rights
+- assessment_id: external
+  area: scope
+  topic: PISCES context-only navigation
+  outcome: supported
+  summary: All records remain unmatched to PISCES. Verified SFID-413 metadata provides
+    unrelated navigation only. The existing no-payload and no-equivalence limits are
+    preserved.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - pisces
+  - native-checks
+- assessment_id: contract
+  area: consistency
+  topic: Current scientific source contract
+  outcome: supported
+  summary: Independent native/schema/source/regression checks pass at this exact input
+    commit. The bounded contract binds retained claims and guards limitations and
+    navigation metadata; deterministic equality does not establish general literature
+    truth.
+  target_ids:
+  - ScaleupMech:cgl-ile8-isoleucine-scale-transfer
+  - ScaleupMech:dm1945x3-cadaverine-physical-scale-down
+  - ScaleupMech:zx01-gp1-kla-scale-transfer
+  evidence_ids:
+  - native-checks
+findings: []
+actions: []
+limitations:
+- The three studies do not establish a general scale-up rule or organism-wide performance.
+- The cadaverine experiment is physical scale-down; its PFR-volume discrepancy remains
+  unresolved.
+- The isoleucine yield denominator, productivity accounting and full 50 L operating
+  context remain unresolved; no formal yield comparison is supplied.
+- GP-1 similar kLa is not identical oxygen-transfer rate or an isolated vessel-size
+  intervention.
+- No scientific PISCES match is established; SFID-413 is unrelated navigation only.
+- Original complete HTML snapshots were not recovered locally. Fresh HTML has exact
+  matching selected scientific text, and the supplement has the exact original whole-file
+  hash.
+- Scientific acceptance does not certify hosted CI, repository visibility policy,
+  fleet admission, deployment, runtime adoption or merge approval.
+notes:
+- The earlier immutable review remains unchanged and valid against its historical
+  source revision. This new observation assesses the current committed inputs.
+- Current visibility wording is treated as an API observation separate from private-policy
+  constraints; no visibility or admission decision follows from this scientific review.
+links:
+- https://github.com/CultureBotAI/ScaleupMech/pull/4
+- https://github.com/CultureBotAI/ScaleupMech/issues/1
+- https://github.com/CultureBotAI/ScaleupMech/issues/6
+- https://github.com/CultureBotAI/ScaleupMech/issues/7
+- https://github.com/CultureBotAI/ScaleupMech/issues/8
+tags:
+- independent-review
+- scale-transfer
+- seed-closeout
+- source-rereview
+```

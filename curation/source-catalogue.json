@@ -1,0 +1,61 @@
+{
+  "format_version": 1,
+  "sources": [
+    {
+      "source_id": "zhou",
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+      "doi": "10.3390/molecules23010125",
+      "title": "Zhou et al. (2018), GP-1 fermentation scale-up, Molecules23:125",
+      "source_license": "CC-BY-4.0",
+      "rights_note": "Primary article or linked supplement; retain author attribution. Scientific records and projections are curator paraphrases/transcriptions, not an independent data release.",
+      "retrieved_at": "2026-11-09T03:19:01.151987+00:00",
+      "original_sha256": "3afdacd0f3772b23af779e6284c0480ab2f528afd4004c3048d580c1c1416888",
+      "original_bytes": 223323,
+      "projection": "curation/sources/zhou.json",
+      "projection_sha256": "737aab4fd35734a07edecd086c639d0ef74282b1a75faffc409355f84dec98d7",
+      "projection_kind": "bounded curator fact projection with source locator and selected-text digest; full paper retained only in private workspace"
+    },
+    {
+      "source_id": "olughu",
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "doi": "10.1002/jctb.6248",
+      "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB95:675–685",
+      "source_license": "CC-BY-4.0",
+      "rights_note": "Primary article or linked supplement; retain author attribution. Scientific records and projections are curator paraphrases/transcriptions, not an independent data release.",
+      "retrieved_at": "2026-11-09T03:19:01.506584+00:00",
+      "original_sha256": "99da86b0c0862b198006ece86784ee188744fffc2a4021701a452ed247f58f58",
+      "original_bytes": 214624,
+      "projection": "curation/sources/olughu.json",
+      "projection_sha256": "b20e6b334886a5e87a6df46075de677d444cc8fb2d89f845e1ed4a1c7401bfba",
+      "projection_kind": "bounded curator fact projection with source locator and selected-text digest; full paper retained only in private workspace"
+    },
+    {
+      "source_id": "cao",
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+      "doi": "10.1186/s40104-026-01459-y",
+      "title": "Cao et al. (2026), L-isoleucine production, J Animal Sci Biotechnol17:142",
+      "source_license": "CC-BY-4.0",
+      "rights_note": "Primary article or linked supplement; retain author attribution. Scientific records and projections are curator paraphrases/transcriptions, not an independent data release.",
+      "retrieved_at": "2026-11-09T03:19:01.880581+00:00",
+      "original_sha256": "0636e47e306d3d50566c137ae3085257c97c1363ff3e4faeedc446e15fa78a13",
+      "original_bytes": 218704,
+      "projection": "curation/sources/cao.json",
+      "projection_sha256": "448c11d7ec2abde52643fec46f27797aa6d13c6d112e80644a8429f4df1c57e6",
+      "projection_kind": "bounded curator fact projection with source locator and selected-text digest; full paper retained only in private workspace"
+    },
+    {
+      "source_id": "cao-supp",
+      "reference": "https://static-content.springer.com/esm/art%3A10.1186%2Fs40104-026-01459-y/MediaObjects/40104_2026_1459_MOESM1_ESM.docx",
+      "doi": "10.1186/s40104-026-01459-y",
+      "title": "Cao et al. (2026), Additional file1, Fig.S20 and TableS11",
+      "source_license": "CC-BY-4.0",
+      "rights_note": "Primary article or linked supplement; retain author attribution. Scientific records and projections are curator paraphrases/transcriptions, not an independent data release.",
+      "retrieved_at": "2026-11-09T03:20:20.420961+00:00",
+      "original_sha256": "439cf3fdb80e85c1b5315526f099616164856b2364a1e1f476c09be4ebbea0e5",
+      "original_bytes": 4207060,
+      "projection": "curation/sources/cao-supp.json",
+      "projection_sha256": "03b88bad88c17045d0107c83da9bb2ec8d46179e258eca0474d9baa76462e9cf",
+      "projection_kind": "bounded curator fact projection with source locator and selected-text digest; full paper retained only in private workspace"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "source_id": "zhou",
+  "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/",
+  "locators": {
+    "html:#sec4dot1-molecules-23-00125": {
+      "source_locator": "html:#sec4dot1-molecules-23-00125",
+      "curator_paraphrase": "The paper identifies ZX01 and culture collection strain CGMCC4893; species spelling is retained as published.",
+      "selected_text_sha256": "fbe1be99d1fdc37a9c19fe01282f35cf9555dbdd3b46340ef05d02eff28e3700",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--organism": {
+          "reported_name": "Streptomyces kanasenisi",
+          "strain_label": "ZX01",
+          "strain_identifier": "CGMCC 4893"
+        }
+      }
+    },
+    "html:#sec2dot6-molecules-23-00125/p[3]": {
+      "source_locator": "html:#sec2dot6-molecules-23-00125/p[3]",
+      "curator_paraphrase": "The study reports pilot-scale verification at similar kLa and compares outcomes with bench-scale batches.",
+      "selected_text_sha256": "de5c140c78705c509fe0afe6694aa102aa407e6f80bb140c35db49ee31250358",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--name": "ZX01 GP-1 transfer from nominal 5 L to 500 L",
+        "zx01-gp1-kla-scale-transfer--record_kind": "OBSERVED_SCALE_TRANSFER",
+        "zx01-gp1-kla-scale-transfer--description": "Four-scale batch fermentation verification compares GP-1 concentration and logarithmic-phase kLa for the same reported ZX01 strain.",
+        "zx01-gp1-kla-scale-transfer--process_context": {
+          "summary": "Glycoprotein GP-1 batch fermentation at bench and pilot scales; agitation was adjusted to obtain similar kLa. The scale-dependent inoculum and vessel systems are not claimed identical."
+        },
+        "zx01-gp1-kla-scale-transfer--comparisons--0": {
+          "comparison_id": "gp1-four-scales",
+          "kind": "OBSERVED_TRANSFER",
+          "condition_ids": [
+            "vessel-5l",
+            "vessel-15l",
+            "vessel-70l",
+            "vessel-500l"
+          ],
+          "measurement_ids": [
+            "gp1-5l",
+            "gp1-15l",
+            "gp1-70l",
+            "gp1-500l"
+          ],
+          "endpoint": "TITER",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+          "interpretation": "These reported batch averages support this study-specific transfer comparison. They do not isolate vessel size from agitation, geometry or inoculum differences."
+        },
+        "zx01-gp1-kla-scale-transfer--comparisons--1": {
+          "comparison_id": "kla-four-scales",
+          "kind": "OBSERVED_TRANSFER",
+          "condition_ids": [
+            "vessel-5l",
+            "vessel-15l",
+            "vessel-70l",
+            "vessel-500l"
+          ],
+          "measurement_ids": [
+            "kla-5l",
+            "kla-15l",
+            "kla-70l",
+            "kla-500l"
+          ],
+          "endpoint": "KLA",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The same reported strain was assessed in repeated verification batches at four vessel sizes, using similar kLa as the transfer criterion.",
+          "interpretation": "These reported batch averages support this study-specific transfer comparison. They do not isolate vessel size from agitation, geometry or inoculum differences."
+        }
+      }
+    },
+    "html:#molecules-23-00125-t005": {
+      "source_locator": "html:#molecules-23-00125-t005",
+      "curator_paraphrase": "Table 5 lists total vessel volume 5 L.",
+      "selected_text_sha256": "ea6e712011b0152fac58df2ad12bc0811ffcc5fbb5e733aea1c522da0f902ed1",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--conditions--0--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--0--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "3.5",
+            "qualifier": "REPORTED",
+            "value": 3.5,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--1--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "15",
+            "qualifier": "REPORTED",
+            "value": 15,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--1--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "10",
+            "qualifier": "REPORTED",
+            "value": 10,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--2--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "70",
+            "qualifier": "REPORTED",
+            "value": 70,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--2--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "50",
+            "qualifier": "REPORTED",
+            "value": 50,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--3--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "500",
+            "qualifier": "REPORTED",
+            "value": 500,
+            "unit": "L",
+            "basis": "Total vessel volume reported in Table 5; not culture volume."
+          }
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--3--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "350",
+            "qualifier": "REPORTED",
+            "value": 350,
+            "unit": "L",
+            "basis": "Source-labelled working volume in Table 5; not final broth volume after sampling."
+          }
+        }
+      }
+    },
+    "html:#sec4dot2-molecules-23-00125/p[2]": {
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[2]",
+      "curator_paraphrase": "The paper separately specifies seed and fermentation media.",
+      "selected_text_sha256": "2778323f269a68eff3072cce052d9be4b639fe95a454c4eea1d9af751dbaeb6b",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--conditions--0--medium": {
+          "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run."
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--1--medium": {
+          "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run."
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--2--medium": {
+          "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run."
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--3--medium": {
+          "summary": "The source lists a fermentation medium containing millet steep liquor, soluble starch, yeast extract, sodium chloride and calcium carbonate. Inoculum preparation differs for the 500 L run."
+        }
+      }
+    },
+    "html:#sec4dot2-molecules-23-00125/p[1]": {
+      "source_locator": "html:#sec4dot2-molecules-23-00125/p[1]",
+      "curator_paraphrase": "The 500 L inoculum uses a seed fermentor, whereas smaller production vessels use shake-flask seed cultures.",
+      "selected_text_sha256": "1d22394e3c896da2c7dd20de2ede0982dd28edcff9c34666da636770ab45a2ef",
+      "facts": {}
+    },
+    "html:#molecules-23-00125-t002": {
+      "source_locator": "html:#molecules-23-00125-t002",
+      "curator_paraphrase": "The repeated verification table reports the nominal 5 L condition and its batch averages.",
+      "selected_text_sha256": "3dc78da9f5b54e3b1f69bb27e2ec4dc2d676b8b28f4b3ba82e0f2e721b566eb4",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--conditions--0": {
+          "condition_id": "vessel-5l",
+          "name": "Nominal 5 L verification fermentor",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Source verification batches at 200 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--0": {
+          "measurement_id": "gp1-5l",
+          "condition_id": "vessel-5l",
+          "endpoint": "TITER",
+          "name": "Final GP-1 concentration",
+          "quantity": {
+            "reported_value": "3.92",
+            "qualifier": "REPORTED",
+            "value": 3.92,
+            "unit": "mg/L",
+            "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--1": {
+          "measurement_id": "kla-5l",
+          "condition_id": "vessel-5l",
+          "endpoint": "KLA",
+          "name": "Volumetric oxygen transfer coefficient",
+          "quantity": {
+            "reported_value": "21.62",
+            "qualifier": "REPORTED",
+            "value": 21.62,
+            "unit": "h^-1",
+            "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+        }
+      }
+    },
+    "html:#sec4dot7-molecules-23-00125": {
+      "source_locator": "html:#sec4dot7-molecules-23-00125",
+      "curator_paraphrase": "Methods report 7-day cultivation for the selected production vessel scale.",
+      "selected_text_sha256": "d24a850cdc37f01a9fffb8c4a915e1c891dd37c19b4bcb83192df1fb4d34b709",
+      "facts": {}
+    },
+    "html:#sec4dot4-molecules-23-00125": {
+      "source_locator": "html:#sec4dot4-molecules-23-00125",
+      "curator_paraphrase": "GP-1 was extracted and quantified by HPLC; this is a measured concentration endpoint.",
+      "selected_text_sha256": "c01275a00041ba4d8c875931e2c4b67355b19339e04c654d0edef05dd79c66f6",
+      "facts": {}
+    },
+    "html:#sec4dot6-molecules-23-00125": {
+      "source_locator": "html:#sec4dot6-molecules-23-00125",
+      "curator_paraphrase": "kLa was determined by dynamic gassing-out measurements during logarithmic growth at 12 h.",
+      "selected_text_sha256": "4e79282f0714c89d24b904b3ef8b0c2cceb679874a06afb7a6bd13af8471c520",
+      "facts": {}
+    },
+    "html:#molecules-23-00125-t004": {
+      "source_locator": "html:#molecules-23-00125-t004",
+      "curator_paraphrase": "The repeated verification table reports the nominal 15 L condition and its batch averages.",
+      "selected_text_sha256": "29b38a89aa3b29c11225d999781df9726b2f3d5ffc0ed1d36b2a8c8058a65232",
+      "facts": {
+        "zx01-gp1-kla-scale-transfer--conditions--1": {
+          "condition_id": "vessel-15l",
+          "name": "Nominal 15 L verification fermentor",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Source verification batches at 225 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments."
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--2": {
+          "condition_id": "vessel-70l",
+          "name": "Nominal 70 L verification fermentor",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Source verification batches at 250 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments."
+        },
+        "zx01-gp1-kla-scale-transfer--conditions--3": {
+          "condition_id": "vessel-500l",
+          "name": "Nominal 500 L verification fermentor",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Source verification batches at 250 rpm and 2.0 vvm. The table reports four batches and their averages; these are separate from preliminary optimization experiments."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--2": {
+          "measurement_id": "gp1-15l",
+          "condition_id": "vessel-15l",
+          "endpoint": "TITER",
+          "name": "Final GP-1 concentration",
+          "quantity": {
+            "reported_value": "4.03",
+            "qualifier": "REPORTED",
+            "value": 4.03,
+            "unit": "mg/L",
+            "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--3": {
+          "measurement_id": "kla-15l",
+          "condition_id": "vessel-15l",
+          "endpoint": "KLA",
+          "name": "Volumetric oxygen transfer coefficient",
+          "quantity": {
+            "reported_value": "22.80",
+            "qualifier": "REPORTED",
+            "value": 22.8,
+            "unit": "h^-1",
+            "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--4": {
+          "measurement_id": "gp1-70l",
+          "condition_id": "vessel-70l",
+          "endpoint": "TITER",
+          "name": "Final GP-1 concentration",
+          "quantity": {
+            "reported_value": "3.82",
+            "qualifier": "REPORTED",
+            "value": 3.82,
+            "unit": "mg/L",
+            "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--5": {
+          "measurement_id": "kla-70l",
+          "condition_id": "vessel-70l",
+          "endpoint": "KLA",
+          "name": "Volumetric oxygen transfer coefficient",
+          "quantity": {
+            "reported_value": "23.20",
+            "qualifier": "REPORTED",
+            "value": 23.2,
+            "unit": "h^-1",
+            "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--6": {
+          "measurement_id": "gp1-500l",
+          "condition_id": "vessel-500l",
+          "endpoint": "TITER",
+          "name": "Final GP-1 concentration",
+          "quantity": {
+            "reported_value": "4.20",
+            "qualifier": "REPORTED",
+            "value": 4.2,
+            "unit": "mg/L",
+            "basis": "GP-1 mass per litre of fermentation broth; source four-batch arithmetic mean."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final batch result; Methods 4.7/4.8 report 7-day cultivation. GP-1 measured after extraction using HPLC."
+        },
+        "zx01-gp1-kla-scale-transfer--measurements--7": {
+          "measurement_id": "kla-500l",
+          "condition_id": "vessel-500l",
+          "endpoint": "KLA",
+          "name": "Volumetric oxygen transfer coefficient",
+          "quantity": {
+            "reported_value": "22.24",
+            "qualifier": "REPORTED",
+            "value": 22.24,
+            "unit": "h^-1",
+            "basis": "Source four-batch mean kLa; coefficient, not oxygen transfer rate."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Logarithmic phase at 12 h; dynamic gassing-out method (Methods 4.6)."
+        }
+      }
+    },
+    "html:#sec4dot8-molecules-23-00125": {
+      "source_locator": "html:#sec4dot8-molecules-23-00125",
+      "curator_paraphrase": "Methods report 7-day cultivation for the selected production vessel scale.",
+      "selected_text_sha256": "56188e99636b636f47b1fe7489801b9a1e886818276b86998f7887df5ca1b1ef",
+      "facts": {}
+    }
+  }
+}

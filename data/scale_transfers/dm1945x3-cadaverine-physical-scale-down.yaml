@@ -1,0 +1,438 @@
+{
+  "id": "ScaleupMech:dm1945x3-cadaverine-physical-scale-down",
+  "name": "DM1945x3 cadaverine response in a physical STR/PFR scale-down model",
+  "record_kind": "SCALE_DOWN_MODEL",
+  "description": "A bench-scale stirred-tank control is compared with SDR 12, a physical two-compartment culture with combined oxygen, glucose and pH gradients.",
+  "organism": {
+    "reported_name": "Corynebacterium glutamicum",
+    "strain_label": "DM1945 Δact3 Ptuf-ldcC_OPT (DM1945x3)",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+        "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+        "claim": "The Methods identify the recombinant strain and its DM1945x3 abbreviation.",
+        "locator": "html:#jctb6248-sec-0005/p[2]",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "process_context": {
+    "summary": "Cadaverine fed-batch fermentation; the scale-down apparatus experimentally reproduces heterogeneity expected in larger vessels. It is not a measured manufacturing-scale cultivation.",
+    "evidence": [
+      {
+        "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+        "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+        "claim": "SDR 12 belongs to the combined-gradient, constant-cell-entry-frequency experimental series.",
+        "locator": "html:#jctb6248-sec-0006/p[4]",
+        "source_license": "CC-BY-4.0"
+      }
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "str-control",
+      "name": "STR only",
+      "kind": "OBSERVED_CULTURE",
+      "description": "Single well-mixed STR control.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal stirred-tank vessel size; the PFR is a separate component.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+                "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+                "claim": "Methods identify a nominal 5 L stirred-tank vessel.",
+                "locator": "html:#jctb6248-sec-0005/p[6]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          },
+          "component": "STR"
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "3",
+            "qualifier": "REPORTED",
+            "value": 3,
+            "unit": "L",
+            "basis": "STR working volume at the specified experiment; does not include the separate PFR.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+                "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+                "claim": "Table 1 reports STR volume 3 L forSTR only.",
+                "locator": "html:#jctb6248-tbl-0001",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          },
+          "component": "STR"
+        }
+      ],
+      "medium": {
+        "summary": "The publication separately reports batch medium and concentrated glucose-containing fed-batch medium. The feed and base enter the PFR in SDR 12, whereas the control uses the STR; feed location is part of the comparison.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Methods list the batch medium composition.",
+            "locator": "html:#jctb6248-sec-0005/p[3]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Methods separately list the fed-batch medium composition.",
+            "locator": "html:#jctb6248-sec-0005/p[4]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Table 1 identifies the feed and base addition locations for the control and SDR 12.",
+            "locator": "html:#jctb6248-tbl-0001",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+          "claim": "Table 1 specifies theSTR only condition.",
+          "locator": "html:#jctb6248-tbl-0001",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "condition_id": "sdr12",
+      "name": "SDR 12",
+      "kind": "SCALE_DOWN_EXPERIMENT",
+      "description": "Experimental STR/PFR culture with glucose and base introduced into the PFR, oxygen supplied to the STR, PFR residence time 5min and source-reported cell-entry frequency 0.0018s^-1.",
+      "volumes": [
+        {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal stirred-tank vessel size; the PFR is a separate component.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+                "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+                "claim": "Methods identify a nominal 5 L stirred-tank vessel.",
+                "locator": "html:#jctb6248-sec-0005/p[6]",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          },
+          "component": "STR"
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "0.6",
+            "qualifier": "REPORTED",
+            "value": 0.6,
+            "unit": "L",
+            "basis": "STR working volume at the specified experiment; does not include the separate PFR.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+                "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+                "claim": "Table 1 reports STR volume 0.6 L forSDR 12.",
+                "locator": "html:#jctb6248-tbl-0001",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          },
+          "component": "STR"
+        },
+        {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "0.3",
+            "qualifier": "REPORTED",
+            "value": 0.3,
+            "unit": "L",
+            "basis": "PFR volume as tabulated in Table 1; Methods separately states 320 mL, an unresolved source discrepancy.",
+            "evidence": [
+              {
+                "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+                "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+                "claim": "Table 1 lists 0.3 L PFR volume for SDR 12.",
+                "locator": "html:#jctb6248-tbl-0001",
+                "source_license": "CC-BY-4.0"
+              }
+            ]
+          },
+          "component": "PFR"
+        }
+      ],
+      "medium": {
+        "summary": "The publication separately reports batch medium and concentrated glucose-containing fed-batch medium. The feed and base enter the PFR in SDR 12, whereas the control uses the STR; feed location is part of the comparison.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Methods list the batch medium composition.",
+            "locator": "html:#jctb6248-sec-0005/p[3]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Methods separately list the fed-batch medium composition.",
+            "locator": "html:#jctb6248-sec-0005/p[4]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Table 1 identifies the feed and base addition locations for the control and SDR 12.",
+            "locator": "html:#jctb6248-tbl-0001",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+          "claim": "Table 1 specifies theSDR 12 condition.",
+          "locator": "html:#jctb6248-tbl-0001",
+          "source_license": "CC-BY-4.0"
+        }
+      ],
+      "scale_down_target": {
+        "summary": "Physical laboratory proxy for increasing spatial and temporal pH, glucose and oxygen gradients in larger fed-batch vessels. No direct large-scale outcome for this strain is reported in this comparison.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "The authors describe the extreme experimental gradients as a way to investigate sensitivity to heterogeneous larger-scale environments.",
+            "locator": "html:#jctb6248-sec-0006/p[5]",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "control-cadaverine",
+      "condition_id": "str-control",
+      "endpoint": "TITER",
+      "name": "Final cadaverine concentration",
+      "quantity": {
+        "reported_value": "≈19.5",
+        "qualifier": "APPROXIMATE",
+        "value": 19.5,
+        "unit": "g/L",
+        "basis": "Cadaverine mass per litre of culture; approximate source-reported control concentration.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Results report approximately 19.5 g/L cadaverine in the STR-only control.",
+            "locator": "html:#jctb6248-sec-0006/p[6]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "The study reports 39 h total fermentation time for all simulations.",
+            "locator": "html:#jctb6248-sec-0005/p[9]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Figure 4 describes final cadaverine concentration after 39 h and standard-deviation error bars from two biological replicates.",
+            "locator": "html:#jctb6248-fig-0004",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final result after 39 h total fermentation; approximate text value, not plot digitization."
+    },
+    {
+      "measurement_id": "sdr12-cadaverine",
+      "condition_id": "sdr12",
+      "endpoint": "TITER",
+      "name": "Final cadaverine concentration",
+      "quantity": {
+        "reported_value": "5.3",
+        "qualifier": "REPORTED",
+        "value": 5.3,
+        "unit": "g/L",
+        "basis": "Cadaverine mass per litre of culture; source-reported SDR 12 mean.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Results report mean 5.3 g/L cadaverine for SDR 12.",
+            "locator": "html:#jctb6248-sec-0006/p[6]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "The study reports 39 h total fermentation time for all simulations.",
+            "locator": "html:#jctb6248-sec-0005/p[9]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Figure 4 describes final cadaverine concentration after 39 h and standard-deviation error bars from two biological replicates.",
+            "locator": "html:#jctb6248-fig-0004",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "OBSERVED",
+      "sampling_context": "Final result after 39 h total fermentation; two biological replicates in Figure 4."
+    },
+    {
+      "measurement_id": "sdr12-relative-loss",
+      "condition_id": "sdr12",
+      "endpoint": "OTHER",
+      "name": "Relative cadaverine concentration decrease",
+      "quantity": {
+        "reported_value": "73",
+        "qualifier": "REPORTED",
+        "value": 73,
+        "unit": "%",
+        "basis": "Decrease relative to STR-only control concentration; source-reported percentage, not recalculated here.",
+        "evidence": [
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Results explicitly report a 73% decrease for SDR 12 relative to STR-only.",
+            "locator": "html:#jctb6248-sec-0006/p[6]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "The study reports 39 h total fermentation time for all simulations.",
+            "locator": "html:#jctb6248-sec-0005/p[9]",
+            "source_license": "CC-BY-4.0"
+          },
+          {
+            "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+            "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+            "claim": "Figure 4 describes final cadaverine concentration after 39 h and standard-deviation error bars from two biological replicates.",
+            "locator": "html:#jctb6248-fig-0004",
+            "source_license": "CC-BY-4.0"
+          }
+        ]
+      },
+      "evidence_level": "REPORTED_CALCULATION",
+      "sampling_context": "Final concentration comparison after 39 h; rounded source-reported calculation.",
+      "reference_condition_id": "str-control"
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison_id": "cadaverine-control-vs-sdr12",
+      "kind": "SCALE_DOWN_EVALUATION",
+      "condition_ids": [
+        "str-control",
+        "sdr12"
+      ],
+      "measurement_ids": [
+        "control-cadaverine",
+        "sdr12-cadaverine"
+      ],
+      "endpoint": "TITER",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The authors compare final cadaverine concentration in the STR-only baseline and experimental SDR 12 under the same reported strain and overall fermentation duration.",
+      "interpretation": "The lower SDR 12 concentration is experimental evidence for sensitivity to the simulated combined gradients. It is not an observed loss following cultivation at industrial scale.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+          "claim": "The authors compare final cadaverine concentration in the STR-only baseline and experimental SDR 12 under the same reported strain and overall fermentation duration.",
+          "locator": "html:#jctb6248-sec-0006/p[6]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "comparison_id": "reported-relative-loss",
+      "kind": "SCALE_DOWN_EVALUATION",
+      "condition_ids": [
+        "str-control",
+        "sdr12"
+      ],
+      "measurement_ids": [
+        "sdr12-relative-loss"
+      ],
+      "endpoint": "OTHER",
+      "comparability": "SOURCE_REPORTED_COMPARABLE",
+      "comparability_basis": "The Results explicitly calculate the SDR 12 loss against the STR-only control.",
+      "interpretation": "The 73% value is retained with the source denominator and rounding; no absolute control value is invented from the percentage.",
+      "evidence": [
+        {
+          "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+          "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+          "claim": "The Results explicitly calculate the SDR 12 loss against the STR-only control.",
+          "locator": "html:#jctb6248-sec-0006/p[6]",
+          "source_license": "CC-BY-4.0"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "The physical scale-down model is an experiment; it is neither a numerical prediction nor an observed transfer of this strain to a manufacturing vessel.",
+    "Table 1 gives PFR volume 0.3 L, whereas Methods gives 320 mL. The table value is retained with its provenance and the discrepancy remains unresolved.",
+    "Abstract losses 26%, 49% and 59% aggregate multiple gradient experiments and are not attributed here to individual SDR conditions.",
+    "The article uses productivity wording for some concentration comparisons. This seed labels the g/L endpoints as concentrations and does not convert them into rates.",
+    "The STR-only concentration is approximate; no uncertainty or additional significant digits are inferred."
+  ],
+  "evidence": [
+    {
+      "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+      "title": "Olughu et al. (2019 online;2020 issue), cadaverine scale-down, JCTB 95:675–685",
+      "claim": "A bench-scale stirred-tank control is compared with SDR 12, a physical two-compartment culture with combined oxygen, glucose and pH gradients.",
+      "locator": "html:#jctb6248-sec-0006/p[6]",
+      "source_license": "CC-BY-4.0"
+    }
+  ],
+  "research_gaps": [
+    {
+      "scope": "measurements",
+      "reason": "No matched source-reported cadaverine substrate yield, volumetric rate, kLa or OTR is retained for this selected pair."
+    },
+    {
+      "scope": "comparability",
+      "reason": "This model does not directly validate industrial-scale performance for DM1945x3; no manufacturing-scale condition is created."
+    },
+    {
+      "scope": "pisces",
+      "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+    }
+  ],
+  "curation_history": [
+    {
+      "timestamp": "2026-11-09T03:28:31Z",
+      "curator": "scaleup-stream-c",
+      "action": "CREATE",
+      "summary": "Curate primary strain-specific scale evidence with reported quantities and scoped comparisons",
+      "history_file": "history/records/dm1945x3-cadaverine-physical-scale-down/2026-11-09T032831Z-scaleup-stream-c-526d60.yaml"
+    }
+  ]
+}

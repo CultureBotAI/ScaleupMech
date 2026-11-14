@@ -1,0 +1,236 @@
+{
+  "source_id": "olughu",
+  "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/",
+  "locators": {
+    "html:#jctb6248-sec-0005/p[2]": {
+      "source_locator": "html:#jctb6248-sec-0005/p[2]",
+      "curator_paraphrase": "The Methods identify the recombinant strain and its DM1945x3 abbreviation.",
+      "selected_text_sha256": "8073bf90c4678f6f9003534a4a3d3defef22a0eadbf75a3be7a2f565eb34538e",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--organism": {
+          "reported_name": "Corynebacterium glutamicum",
+          "strain_label": "DM1945 Δact3 Ptuf-ldcC_OPT (DM1945x3)"
+        }
+      }
+    },
+    "html:#jctb6248-sec-0006/p[4]": {
+      "source_locator": "html:#jctb6248-sec-0006/p[4]",
+      "curator_paraphrase": "SDR 12 belongs to the combined-gradient, constant-cell-entry-frequency experimental series.",
+      "selected_text_sha256": "29f740276ba112d57e3dc7142791c5a4b72e2aae4e8d3815e50466ccf018815e",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--process_context": {
+          "summary": "Cadaverine fed-batch fermentation; the scale-down apparatus experimentally reproduces heterogeneity expected in larger vessels. It is not a measured manufacturing-scale cultivation."
+        }
+      }
+    },
+    "html:#jctb6248-sec-0006/p[6]": {
+      "source_locator": "html:#jctb6248-sec-0006/p[6]",
+      "curator_paraphrase": "A bench-scale stirred-tank control is compared with SDR 12, a physical two-compartment culture with combined oxygen, glucose and pH gradients.",
+      "selected_text_sha256": "41bde1b0f814872365b82a1e10c521798e0049ea404aa356071691fd72789d90",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--name": "DM1945x3 cadaverine response in a physical STR/PFR scale-down model",
+        "dm1945x3-cadaverine-physical-scale-down--record_kind": "SCALE_DOWN_MODEL",
+        "dm1945x3-cadaverine-physical-scale-down--description": "A bench-scale stirred-tank control is compared with SDR 12, a physical two-compartment culture with combined oxygen, glucose and pH gradients.",
+        "dm1945x3-cadaverine-physical-scale-down--measurements--0": {
+          "measurement_id": "control-cadaverine",
+          "condition_id": "str-control",
+          "endpoint": "TITER",
+          "name": "Final cadaverine concentration",
+          "quantity": {
+            "reported_value": "≈19.5",
+            "qualifier": "APPROXIMATE",
+            "value": 19.5,
+            "unit": "g/L",
+            "basis": "Cadaverine mass per litre of culture; approximate source-reported control concentration."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final result after 39 h total fermentation; approximate text value, not plot digitization."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--measurements--1": {
+          "measurement_id": "sdr12-cadaverine",
+          "condition_id": "sdr12",
+          "endpoint": "TITER",
+          "name": "Final cadaverine concentration",
+          "quantity": {
+            "reported_value": "5.3",
+            "qualifier": "REPORTED",
+            "value": 5.3,
+            "unit": "g/L",
+            "basis": "Cadaverine mass per litre of culture; source-reported SDR 12 mean."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Final result after 39 h total fermentation; two biological replicates in Figure 4."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--measurements--2": {
+          "measurement_id": "sdr12-relative-loss",
+          "condition_id": "sdr12",
+          "endpoint": "OTHER",
+          "name": "Relative cadaverine concentration decrease",
+          "quantity": {
+            "reported_value": "73",
+            "qualifier": "REPORTED",
+            "value": 73,
+            "unit": "%",
+            "basis": "Decrease relative to STR-only control concentration; source-reported percentage, not recalculated here."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Final concentration comparison after 39 h; rounded source-reported calculation.",
+          "reference_condition_id": "str-control"
+        },
+        "dm1945x3-cadaverine-physical-scale-down--comparisons--0": {
+          "comparison_id": "cadaverine-control-vs-sdr12",
+          "kind": "SCALE_DOWN_EVALUATION",
+          "condition_ids": [
+            "str-control",
+            "sdr12"
+          ],
+          "measurement_ids": [
+            "control-cadaverine",
+            "sdr12-cadaverine"
+          ],
+          "endpoint": "TITER",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The authors compare final cadaverine concentration in the STR-only baseline and experimental SDR 12 under the same reported strain and overall fermentation duration.",
+          "interpretation": "The lower SDR 12 concentration is experimental evidence for sensitivity to the simulated combined gradients. It is not an observed loss following cultivation at industrial scale."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--comparisons--1": {
+          "comparison_id": "reported-relative-loss",
+          "kind": "SCALE_DOWN_EVALUATION",
+          "condition_ids": [
+            "str-control",
+            "sdr12"
+          ],
+          "measurement_ids": [
+            "sdr12-relative-loss"
+          ],
+          "endpoint": "OTHER",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The Results explicitly calculate the SDR 12 loss against the STR-only control.",
+          "interpretation": "The 73% value is retained with the source denominator and rounding; no absolute control value is invented from the percentage."
+        }
+      }
+    },
+    "html:#jctb6248-sec-0005/p[3]": {
+      "source_locator": "html:#jctb6248-sec-0005/p[3]",
+      "curator_paraphrase": "Methods list the batch medium composition.",
+      "selected_text_sha256": "5742e512f1f4bc149d74235fea25c211f3a71cbd5604580fa98267a4ef7fe41e",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--conditions--0--medium": {
+          "summary": "The publication separately reports batch medium and concentrated glucose-containing fed-batch medium. The feed and base enter the PFR in SDR 12, whereas the control uses the STR; feed location is part of the comparison."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1--medium": {
+          "summary": "The publication separately reports batch medium and concentrated glucose-containing fed-batch medium. The feed and base enter the PFR in SDR 12, whereas the control uses the STR; feed location is part of the comparison."
+        }
+      }
+    },
+    "html:#jctb6248-sec-0005/p[4]": {
+      "source_locator": "html:#jctb6248-sec-0005/p[4]",
+      "curator_paraphrase": "Methods separately list the fed-batch medium composition.",
+      "selected_text_sha256": "fa33629e47429bf327fc11b367ef082bf2ffb2c3df1ed4a91077467ed5ee0261",
+      "facts": {}
+    },
+    "html:#jctb6248-tbl-0001": {
+      "source_locator": "html:#jctb6248-tbl-0001",
+      "curator_paraphrase": "Table 1 identifies the feed and base addition locations for the control and SDR 12.",
+      "selected_text_sha256": "8129d837abbadc6deca79128894c26bcda3f8340fdabce01f73dc95171034b19",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--conditions--0": {
+          "condition_id": "str-control",
+          "name": "STR only",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Single well-mixed STR control."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--0--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "3",
+            "qualifier": "REPORTED",
+            "value": 3,
+            "unit": "L",
+            "basis": "STR working volume at the specified experiment; does not include the separate PFR."
+          },
+          "component": "STR"
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1": {
+          "condition_id": "sdr12",
+          "name": "SDR 12",
+          "kind": "SCALE_DOWN_EXPERIMENT",
+          "description": "Experimental STR/PFR culture with glucose and base introduced into the PFR, oxygen supplied to the STR, PFR residence time 5min and source-reported cell-entry frequency 0.0018s^-1."
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--1": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "0.6",
+            "qualifier": "REPORTED",
+            "value": 0.6,
+            "unit": "L",
+            "basis": "STR working volume at the specified experiment; does not include the separate PFR."
+          },
+          "component": "STR"
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--2": {
+          "kind": "WORKING_VOLUME",
+          "quantity": {
+            "reported_value": "0.3",
+            "qualifier": "REPORTED",
+            "value": 0.3,
+            "unit": "L",
+            "basis": "PFR volume as tabulated in Table 1; Methods separately states 320 mL, an unresolved source discrepancy."
+          },
+          "component": "PFR"
+        }
+      }
+    },
+    "html:#jctb6248-sec-0005/p[6]": {
+      "source_locator": "html:#jctb6248-sec-0005/p[6]",
+      "curator_paraphrase": "Methods identify a nominal 5 L stirred-tank vessel.",
+      "selected_text_sha256": "da993ca6ea3db9b0b92510c21120ae0b6269903ebcc6bedec6edbfc109d328b1",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--conditions--0--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal stirred-tank vessel size; the PFR is a separate component."
+          },
+          "component": "STR"
+        },
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal stirred-tank vessel size; the PFR is a separate component."
+          },
+          "component": "STR"
+        }
+      }
+    },
+    "html:#jctb6248-sec-0006/p[5]": {
+      "source_locator": "html:#jctb6248-sec-0006/p[5]",
+      "curator_paraphrase": "The authors describe the extreme experimental gradients as a way to investigate sensitivity to heterogeneous larger-scale environments.",
+      "selected_text_sha256": "f0ea94dc6ff9c8bbe5af91acc44b795a26f2f25a3bc31faf0c1cfa275463b8d2",
+      "facts": {
+        "dm1945x3-cadaverine-physical-scale-down--conditions--1--scale_down_target": {
+          "summary": "Physical laboratory proxy for increasing spatial and temporal pH, glucose and oxygen gradients in larger fed-batch vessels. No direct large-scale outcome for this strain is reported in this comparison."
+        }
+      }
+    },
+    "html:#jctb6248-sec-0005/p[9]": {
+      "source_locator": "html:#jctb6248-sec-0005/p[9]",
+      "curator_paraphrase": "The study reports 39 h total fermentation time for all simulations.",
+      "selected_text_sha256": "9c6d1e2fe70306ee2ae35a6cc83ce009211196b18cbff2e6c9c0333ab92e7809",
+      "facts": {}
+    },
+    "html:#jctb6248-fig-0004": {
+      "source_locator": "html:#jctb6248-fig-0004",
+      "curator_paraphrase": "Figure 4 describes final cadaverine concentration after 39 h and standard-deviation error bars from two biological replicates.",
+      "selected_text_sha256": "9ec1b4e7ad89030b29914b47d7b9413cae5cadcf95a911658ab4564f1b3ec4c8",
+      "facts": {}
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "format_version": 1,
+  "resource_identifier": "SFID-413",
+  "label": "Corn Stover → Ethanol",
+  "url": "https://projectpisces.org/flowsheets/413",
+  "accessed_at": "2026-11-09T03:25:33Z",
+  "verification": "Public detail-page title and identifier verified in web read-only view; no SFF, unit-operation, stream, TEA or other flowsheet payload retrieved or retained.",
+  "scope": "Navigation example only; unrelated to the3seed studies. No scientific record link or strain/scale equivalence is asserted."
+}

@@ -1,0 +1,27 @@
+{
+  "history_version": 1,
+  "target": {
+    "kind": "record",
+    "path": "data/scale_transfers/zx01-gp1-kla-scale-transfer.yaml",
+    "slug": "zx01-gp1-kla-scale-transfer"
+  },
+  "session": {
+    "id": "2026-11-09T032831Z-scaleup-stream-c-bace3d",
+    "timestamp": "2026-11-09T03:28:31Z",
+    "actors": [
+      {
+        "type": "ai_agent",
+        "name": "scaleup-stream-c",
+        "agent_tool": "codex"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "CREATE",
+      "outcome": "changed",
+      "summary": "Curate primary strain-specific scale evidence with reported quantities and scoped comparisons",
+      "details": "Initial source-curated seed preserves nominal and working/component volumes, source-labelled titer/rate/yield bases, physical scale-down status and precise source locators. GP-1 method citations include ScaleupMech issue1 corrections. No PISCES scientific match or payload is imported. See docs/seed-provenance.md."
+    }
+  ]
+}

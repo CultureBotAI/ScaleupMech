@@ -1,0 +1,217 @@
+{
+  "source_id": "cao",
+  "reference": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/",
+  "locators": {
+    "html:#sec2/p[1]": {
+      "source_locator": "html:#sec2/p[1]",
+      "curator_paraphrase": "The source identifies cgl-Ile8 as the final strain used in the optimized 5 L and 50 L comparison.",
+      "selected_text_sha256": "fed5a4a78d0a69da4c94eb5892671fcb1998fd63348ea2e9180172ff1636f1fe",
+      "facts": {
+        "cgl-ile8-isoleucine-scale-transfer--name": "cgl-Ile8 L-isoleucine transfer between nominal 5 L and 50 L vessels",
+        "cgl-ile8-isoleucine-scale-transfer--record_kind": "OBSERVED_SCALE_TRANSFER",
+        "cgl-ile8-isoleucine-scale-transfer--description": "The paper compares optimized cgl-Ile8 fermentation at nominal 5 L and 50 L, reporting product concentration, volumetric productivity and mass-ratio yield.",
+        "cgl-ile8-isoleucine-scale-transfer--organism": {
+          "reported_name": "Corynebacterium glutamicum",
+          "strain_label": "cgl-Ile8"
+        },
+        "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "5",
+            "qualifier": "REPORTED",
+            "value": 5,
+            "unit": "L",
+            "basis": "Nominal fermentor designation in the publication; not working broth volume."
+          }
+        },
+        "cgl-ile8-isoleucine-scale-transfer--conditions--1--volumes--0": {
+          "kind": "NOMINAL_VESSEL_VOLUME",
+          "quantity": {
+            "reported_value": "50",
+            "qualifier": "REPORTED",
+            "value": 50,
+            "unit": "L",
+            "basis": "Nominal fermentor designation in the publication; not working broth volume."
+          }
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--0": {
+          "measurement_id": "titer-5l",
+          "condition_id": "vessel-5l",
+          "endpoint": "TITER",
+          "name": "L-isoleucine concentration",
+          "quantity": {
+            "reported_value": "48.49",
+            "qualifier": "REPORTED",
+            "value": 48.49,
+            "unit": "g/L",
+            "basis": "Source-reported L-isoleucine mass per litre of fermentation culture."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--1": {
+          "measurement_id": "yield-5l",
+          "condition_id": "vessel-5l",
+          "endpoint": "YIELD",
+          "name": "Source-labelled L-isoleucine yield",
+          "quantity": {
+            "reported_value": "0.31",
+            "qualifier": "REPORTED",
+            "value": 0.31,
+            "unit": "g/g",
+            "basis": "Source reports a mass ratio in g/g, but the denominator substrate and consumption accounting are not defined in the retained source; do not interpret as glucose yield."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--2": {
+          "measurement_id": "productivity-5l",
+          "condition_id": "vessel-5l",
+          "endpoint": "VOLUMETRIC_RATE",
+          "name": "L-isoleucine volumetric productivity",
+          "quantity": {
+            "reported_value": "1.01",
+            "qualifier": "REPORTED",
+            "value": 1.01,
+            "unit": "g/L/h",
+            "basis": "Source-labelled volumetric productivity in g/L/h; no independent derivation or unreported averaging convention is supplied."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--3": {
+          "measurement_id": "titer-50l",
+          "condition_id": "vessel-50l",
+          "endpoint": "TITER",
+          "name": "L-isoleucine concentration",
+          "quantity": {
+            "reported_value": "50.12",
+            "qualifier": "REPORTED",
+            "value": 50.12,
+            "unit": "g/L",
+            "basis": "Source-reported L-isoleucine mass per litre of fermentation culture."
+          },
+          "evidence_level": "OBSERVED",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--4": {
+          "measurement_id": "yield-50l",
+          "condition_id": "vessel-50l",
+          "endpoint": "YIELD",
+          "name": "Source-labelled L-isoleucine yield",
+          "quantity": {
+            "reported_value": "0.32",
+            "qualifier": "REPORTED",
+            "value": 0.32,
+            "unit": "g/g",
+            "basis": "Source reports a mass ratio in g/g, but the denominator substrate and consumption accounting are not defined in the retained source; do not interpret as glucose yield."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--measurements--5": {
+          "measurement_id": "productivity-50l",
+          "condition_id": "vessel-50l",
+          "endpoint": "VOLUMETRIC_RATE",
+          "name": "L-isoleucine volumetric productivity",
+          "quantity": {
+            "reported_value": "1.04",
+            "qualifier": "REPORTED",
+            "value": 1.04,
+            "unit": "g/L/h",
+            "basis": "Source-labelled volumetric productivity in g/L/h; no independent derivation or unreported averaging convention is supplied."
+          },
+          "evidence_level": "REPORTED_CALCULATION",
+          "sampling_context": "Reported endpoint in the optimized strain comparison; absolute values transcribed from text, not digitized from curves."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--comparisons--0": {
+          "comparison_id": "titer-two-scales",
+          "kind": "OBSERVED_TRANSFER",
+          "condition_ids": [
+            "vessel-5l",
+            "vessel-50l"
+          ],
+          "measurement_ids": [
+            "titer-5l",
+            "titer-50l"
+          ],
+          "endpoint": "TITER",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+          "interpretation": "This is the paper's process-scalability comparison. It does not isolate scale as a causal factor or establish complete equivalence of unreported operating conditions."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--comparisons--1": {
+          "comparison_id": "productivity-two-scales",
+          "kind": "OBSERVED_TRANSFER",
+          "condition_ids": [
+            "vessel-5l",
+            "vessel-50l"
+          ],
+          "measurement_ids": [
+            "productivity-5l",
+            "productivity-50l"
+          ],
+          "endpoint": "VOLUMETRIC_RATE",
+          "comparability": "SOURCE_REPORTED_COMPARABLE",
+          "comparability_basis": "The abstract explicitly presents the optimized 5 L and subsequent 50 L results for the same cgl-Ile8 strain.",
+          "interpretation": "This is the paper's process-scalability comparison. It does not isolate scale as a causal factor or establish complete equivalence of unreported operating conditions."
+        }
+      }
+    },
+    "html:#Sec21/p[1]": {
+      "source_locator": "html:#Sec21/p[1]",
+      "curator_paraphrase": "The Results distinguish 5 L pH/DO optimization from the subsequent 50 L scalability experiment.",
+      "selected_text_sha256": "e8e25f77e47b7eca2ac30876cc41d3406567d567ecea169e9276441c3bfba9f0",
+      "facts": {
+        "cgl-ile8-isoleucine-scale-transfer--process_context": {
+          "summary": "Study-specific L-isoleucine fermentation comparison after pH and dissolved-oxygen optimization at 5 L. The 50 L result is identified as the scalability experiment; missing operating details remain gaps."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--conditions--0": {
+          "condition_id": "vessel-5l",
+          "name": "Nominal 5 L cgl-Ile8 fermentation",
+          "kind": "OBSERVED_CULTURE",
+          "description": "Optimized 5 L result at pH 7.2 and dissolved-oxygen setpoint 40%; distinct from the earlier unoptimized 35.24 g/L cgl-Ile8 result."
+        },
+        "cgl-ile8-isoleucine-scale-transfer--conditions--1": {
+          "condition_id": "vessel-50l",
+          "name": "Nominal 50 L cgl-Ile8 fermentation",
+          "kind": "OBSERVED_CULTURE",
+          "description": "The subsequent 50 L scalability run. The source text cited here does not establish identical setpoints, feed policy or working volume at this scale."
+        }
+      }
+    },
+    "html:#Sec13/p[2]": {
+      "source_locator": "html:#Sec13/p[2]",
+      "curator_paraphrase": "Methods state 2.5 L fermentation medium in the 5 L vessel.",
+      "selected_text_sha256": "e7e770db2087ea52b744643066ca115bfbfdf3d7baaacf3aeb6b753c0a051f71",
+      "facts": {
+        "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--1": {
+          "kind": "INITIAL_MEDIUM_VOLUME",
+          "quantity": {
+            "reported_value": "2.5",
+            "qualifier": "REPORTED",
+            "value": 2.5,
+            "unit": "L",
+            "basis": "Fermentation medium already in the 5 L vessel before pooled seed transfer; not total culture volume."
+          }
+        },
+        "cgl-ile8-isoleucine-scale-transfer--conditions--0--volumes--2": {
+          "kind": "INOCULUM_VOLUME",
+          "quantity": {
+            "reported_value": "400",
+            "qualifier": "REPORTED",
+            "value": 400,
+            "unit": "mL",
+            "basis": "Pooled seed culture transferred into the 5 L vessel; not summed here with medium to infer working volume."
+          }
+        }
+      }
+    },
+    "html:#Sec12/p[1]": {
+      "source_locator": "html:#Sec12/p[1]",
+      "curator_paraphrase": "The Methods identifies a concentrated glucose feeding solution.",
+      "selected_text_sha256": "7984a22a359aa8b0168c547459d42c7649bedcd987a53c544412267127399be5",
+      "facts": {}
+    }
+  }
+}
