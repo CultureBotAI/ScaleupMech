@@ -140,6 +140,10 @@ def audit(records, catalogue, projections, bindings, navigation):
     for rid, record in by_id.items():
         require(actual[rid] == binding_paths(record), 'scientific field binding coverage differs')
         scope = bindings['record_scope'][rid]
+        # These are reviewed interpretation limits, not primary measurement facts.
+        for field in ('limitations', 'research_gaps'):
+            require(field in scope and record.get(field) == scope[field],
+                    'reviewed seed limitations or research gaps differ')
         for group, key in [('conditions', 'condition_id'), ('measurements', 'measurement_id'), ('comparisons', 'comparison_id')]:
             require([item[key] for item in record.get(group, [])] == scope[key + 's'],
                     'condition, measurement or comparison scope differs')
@@ -148,6 +152,8 @@ def audit(records, catalogue, projections, bindings, navigation):
     require(navigation['format_version'] == 1 and navigation['resource_identifier'] == 'SFID-413'
             and navigation['url'] == 'https://projectpisces.org/flowsheets/413'
             and navigation['label'] == 'Corn Stover → Ethanol', 'unreviewed PISCES navigation metadata')
+    require(navigation == bindings.get('navigation'),
+            'PISCES navigation context or provenance differs from reviewed contract')
     return {'records': len(records), 'conditions': sum(len(r['conditions']) for r in records),
             'measurements': sum(len(r['measurements']) for r in records),
             'comparisons': sum(len(r['comparisons']) for r in records), 'sources': len(sources),

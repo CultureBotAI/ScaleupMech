@@ -1157,6 +1157,22 @@
       ],
       "source_references": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC6017179/"
+      ],
+      "limitations": [
+        "The nominal 100-fold vessel ratio is not presented as an independently derived working-volume ratio.",
+        "The four-batch kLa values are similar, not numerically identical; no OTR value is inferred from kLa.",
+        "Table 2 reports average maximum DCW 3.46 g/L, while nearby prose says 3.31 g/L. Biomass is excluded from this seed to avoid silently resolving that inconsistency.",
+        "The publication spelling Streptomyces kanasenisi is retained; no external taxonomic synonym or accession is inferred."
+      ],
+      "research_gaps": [
+        {
+          "scope": "measurements",
+          "reason": "No source-reported GP-1 substrate yield or volumetric productivity is retained; no rate is calculated from final titer and duration."
+        },
+        {
+          "scope": "pisces",
+          "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+        }
       ]
     },
     "ScaleupMech:dm1945x3-cadaverine-physical-scale-down": {
@@ -1175,6 +1191,27 @@
       ],
       "source_references": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7043379/"
+      ],
+      "limitations": [
+        "The physical scale-down model is an experiment; it is neither a numerical prediction nor an observed transfer of this strain to a manufacturing vessel.",
+        "Table 1 gives PFR volume 0.3 L, whereas Methods gives 320 mL. The table value is retained with its provenance and the discrepancy remains unresolved.",
+        "Abstract losses 26%, 49% and 59% aggregate multiple gradient experiments and are not attributed here to individual SDR conditions.",
+        "The article uses productivity wording for some concentration comparisons. This seed labels the g/L endpoints as concentrations and does not convert them into rates.",
+        "The STR-only concentration is approximate; no uncertainty or additional significant digits are inferred."
+      ],
+      "research_gaps": [
+        {
+          "scope": "measurements",
+          "reason": "No matched source-reported cadaverine substrate yield, volumetric rate, kLa or OTR is retained for this selected pair."
+        },
+        {
+          "scope": "comparability",
+          "reason": "This model does not directly validate industrial-scale performance for DM1945x3; no manufacturing-scale condition is created."
+        },
+        {
+          "scope": "pisces",
+          "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+        }
       ]
     },
     "ScaleupMech:cgl-ile8-isoleucine-scale-transfer": {
@@ -1196,7 +1233,47 @@
       ],
       "source_references": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC13343988/"
+      ],
+      "limitations": [
+        "The 5 L medium volume 2.5 L and inoculum 400 mL are distinct source observations; no 2.9 L working volume is inferred.",
+        "The 50 L designation is nominal. No working or final broth volume is reported in the retained source passages.",
+        "The mass-ratio yields 0.31 g/g and 0.32 g/g are preserved as source-labelled values with unresolved denominators. They are excluded from formal yield comparisons.",
+        "The optimized 5 L endpoints are 48.49 g/L, 0.31 g/g and 1.01 g/L/h; earlier cgl-Ile8 values before process optimization are not substituted.",
+        "Supplementary Figure S 20 spans 0–48 h but does not define yield accounting or 50 L working volume; plotted values are not digitized.",
+        "The general 5 L Methods pH 7.0 differs from the optimized Results pH 7.2; the latter defines the selected optimized condition. No 50 L setpoint is inferred."
+      ],
+      "research_gaps": [
+        {
+          "scope": "media",
+          "reason": "The supplement lists a general fermentation-tank medium, but the 50 L batch-specific composition and feed policy are not established by the retained passages.",
+          "condition_id": "vessel-50l"
+        },
+        {
+          "scope": "volumes",
+          "reason": "Working and final broth volumes are not established for either selected condition; nominal capacities and separate 5 L medium/inoculum values are retained."
+        },
+        {
+          "scope": "measurements",
+          "reason": "The yield denominator and the exact productivity averaging convention are unresolved. No kLa or OTR is retained, and no new rate or yield is computed."
+        },
+        {
+          "scope": "comparability",
+          "reason": "No formal yield comparison is asserted because substrate denominator accounting is unresolved; operating-condition equivalence at 50 L is also incomplete."
+        },
+        {
+          "scope": "pisces",
+          "reason": "No product-specific PISCES flowsheet metadata was verified for this study. The verified Corn Stover → Ethanol example is unrelated; no strain or scale equivalence is asserted."
+        }
       ]
     }
+  },
+  "navigation": {
+    "format_version": 1,
+    "resource_identifier": "SFID-413",
+    "label": "Corn Stover → Ethanol",
+    "url": "https://projectpisces.org/flowsheets/413",
+    "accessed_at": "2026-11-09T03:25:33Z",
+    "verification": "Public detail-page title and identifier verified in web read-only view; no SFF, unit-operation, stream, TEA or other flowsheet payload retrieved or retained.",
+    "scope": "Navigation example only; unrelated to the3seed studies. No scientific record link or strain/scale equivalence is asserted."
   }
 }

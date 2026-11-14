@@ -29,6 +29,13 @@ not an online authenticity guarantee. Scientific correctness is separately
 reviewed against the primary sources. Updating this initial seed requires
 updating and independently reviewing its source contract.
 
+The reviewed contract also retains each record's exact `limitations` and
+`research_gaps`, and the complete context-only navigation metadata. These are
+reviewed scope and provenance constraints, separate from the 71 primary-source
+field bindings. Removing or rewriting them requires an explicit contract update
+and independent scientific review; the audit does not infer that an uncertainty
+has been resolved from a schema-valid string.
+
 The audit rejects real alternative-source mutations: a 15 L result attached to
 5 L, a valid pilot-duration locator substituted for the bench method, removal of
 the inoculum-method citation while retaining the medium citation, invented
@@ -56,3 +63,19 @@ processes with distinct bytecode caches: repaired: 2 pass, coverage guard remove
 source was valid in both negative controls, so the checks distinguish evidence
 coverage from mere citation existence. The private mutation logs remain under
 `~/agent-work/ScaleupMech/evidence/issue1-mutation*.log`.
+
+## Reconciliation onto merged scaffold and template
+
+The original seed head `f6a2a54ed585f935c741fb0e26c1243ca24c86ff` and its
+immutable November 9 scientific review are retained. The seed integrates main
+`3a512d53e9b9d797cace768fea896a196ec24588`, which contains scaffold PR #2
+and template PR #5. Both the source audit and template checks remain required
+recipes. Scientific records, source projections, original retrieval receipts,
+curation history and the original review pair are preserved byte for byte.
+
+The November 9 review assesses historical commit
+`9eb11e5de74e9ffb49fc4b7cb52d053aa4120314`; its hashes are historical
+provenance, not a claim that the later integration and audit changes were
+reviewed at that time. A fresh independent source review is retained separately
+for the reconciled preparation. Seed merge authorization remains separate from
+the earlier scaffold/template decisions.

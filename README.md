@@ -1,6 +1,6 @@
 # ScaleupMech
 
-ScaleupMech curates organism- and strain-level evidence about transferring cultivation between scales: reported titer, rate and yield, oxygen transfer (OTR and kLa), scale-down models and media at scale. The repository is private for now. The initial seed contains three primary studies, eight conditions, seventeen measurements and six explicitly scoped comparisons.
+ScaleupMech curates organism- and strain-level evidence about transferring cultivation between scales: reported titer, rate and yield, oxygen transfer (OTR and kLa), scale-down models and media at scale. The initial seed contains three primary studies, eight conditions, seventeen measurements and six explicitly scoped comparisons.
 
 Each record preserves named experimental conditions, the source-reported biological identity, measurement units and denominator/basis, and explicit limitations. Nominal vessel volume, working volume, initial medium, inoculum and final broth are distinct observations. Reported measurements are kept separate from model predictions; experimental scale-down systems do not establish an observed manufacturing-scale transfer. Comparisons reference actual condition and measurement identifiers and preserve the source's comparability statement. Missing values, strain information and unsupported comparisons remain explicit gaps.
 
@@ -34,6 +34,8 @@ just new-history --record data/scale_transfers/example.yaml --input workspace/ex
 The first command validates without writing. Apply stages the record and canonical history sidecar together through the repository lock and recoverable transaction, preserving existing history. Native serialization is deterministic JSON as a YAML subset; no unmeasured shared YAML emit profile is claimed.
 
 ## Governance and release state
+
+GitHub reported this repository as public on 2026-11-14. Historical agent guidance and the separate CLAW governance policy retain the private-repository policy; this observation does not establish when, why, or under whose authorization visibility changed. Visibility, public fleet admission and policy changes require their own decisions. This seed changes none of them, and raw primary-source snapshots remain outside tracked content.
 
 The scaffold uses immutable claw bootstrap pin `88e719d5480d0008d6ce082510dcd066775f232b`, also used by the installed dependency and lockfile. This is a local bootstrap, not a completed fleet release. Registration, private-repository audit support, the active release lane and common-pin committed-main audit remain separate gates.
 

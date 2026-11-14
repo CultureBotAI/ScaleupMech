@@ -7,6 +7,7 @@ from pathlib import Path
 import pytest
 
 from scaleupmech.seed_audit import audit, load_inputs, pointer
+from scaleupmech.validate import validate_record
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -101,3 +102,75 @@ def test_pisces_navigation_rejects_payload_field(inputs):
 def test_source_pointer_has_canonical_bounded_array_indices(token):
     with pytest.raises(ValueError):
         pointer({'values': ['a', 'b']}, '/values/' + token)
+
+
+SEED_SUFFIXES = [
+    'zx01-gp1-kla-scale-transfer',
+    'dm1945x3-cadaverine-physical-scale-down',
+    'cgl-ile8-isoleucine-scale-transfer',
+]
+
+
+@pytest.mark.parametrize('suffix', SEED_SUFFIXES)
+@pytest.mark.parametrize('change', ['remove', 'contradict'])
+def test_reviewed_limitations_cannot_drift(inputs, suffix, change):
+    r = record(inputs, suffix)
+    if change == 'remove':
+        r['limitations'].pop()
+    else:
+        r['limitations'][0] = (
+            'All conditions are proven manufacturing-scale cultivation with fully resolved '
+            'yield denominators.'
+        )
+    validate_record(r)  # Both alternatives remain valid under the general native schema.
+    with pytest.raises(ValueError, match='reviewed seed limitations or research gaps'):
+        audit(*inputs)
+
+
+@pytest.mark.parametrize('suffix', SEED_SUFFIXES)
+@pytest.mark.parametrize('change', ['remove', 'contradict'])
+def test_reviewed_research_gaps_cannot_drift(inputs, suffix, change):
+    r = record(inputs, suffix)
+    if change == 'remove':
+        # Keep schema-required media/PISCES gaps; the original audit accepted this deletion.
+        gap = next(g for g in r['research_gaps'] if g['scope'] == 'measurements')
+        r['research_gaps'].remove(gap)
+    else:
+        r['research_gaps'][0]['reason'] = (
+            'All strain, volume and denominator questions have been resolved by complete '
+            'primary evidence.'
+        )
+    validate_record(r)
+    with pytest.raises(ValueError, match='reviewed seed limitations or research gaps'):
+        audit(*inputs)
+
+
+@pytest.mark.parametrize('suffix', SEED_SUFFIXES)
+@pytest.mark.parametrize('field', ['limitations', 'research_gaps'])
+def test_reviewed_limit_contract_cannot_omit_field(inputs, suffix, field):
+    r = record(inputs, suffix)
+    del inputs[3]['record_scope'][r['id']][field]
+    with pytest.raises(ValueError, match='reviewed seed limitations or research gaps'):
+        audit(*inputs)
+
+
+@pytest.mark.parametrize('field,value', [
+    ('scope', 'Verified scientific matches for all three studies and strain/scale equivalence.'),
+    ('verification', 'Full SFF, unit-operation, stream and TEA payload imported and verified.'),
+    ('accessed_at', 'not-a-timestamp'),
+    ('accessed_at', '2026-11-10T03:25:33Z'),  # Valid syntax is not the reviewed access event.
+])
+def test_reviewed_navigation_context_and_provenance_cannot_drift(inputs, field, value):
+    inputs[4][field] = value
+    with pytest.raises(ValueError, match='navigation context or provenance'):
+        audit(*inputs)
+
+
+@pytest.mark.parametrize('field', [None, 'scope', 'verification', 'accessed_at'])
+def test_reviewed_navigation_contract_cannot_be_omitted(inputs, field):
+    if field is None:
+        del inputs[3]['navigation']
+    else:
+        del inputs[3]['navigation'][field]
+    with pytest.raises(ValueError, match='navigation context or provenance'):
+        audit(*inputs)
